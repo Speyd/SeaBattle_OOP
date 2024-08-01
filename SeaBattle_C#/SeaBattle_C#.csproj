@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>SeaBattle_C_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdderBoat\AdderBoat.csproj" />
+    <ProjectReference Include="..\AttackerBoat\AttackerBoat.csproj" />
+    <ProjectReference Include="..\Field\Field.csproj" />
+    <ProjectReference Include="..\TypeBoat\TypeBoat.csproj" />
+  </ItemGroup>
+
+</Project>

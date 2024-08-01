@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Field/1.0.0": {
+        "dependencies": {
+          "TypeBoat": "1.0.0"
+        },
+        "runtime": {
+          "Field.dll": {}
+        }
+      },
+      "TypeBoat/1.0.0": {
+        "runtime": {
+          "TypeBoat.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Field/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

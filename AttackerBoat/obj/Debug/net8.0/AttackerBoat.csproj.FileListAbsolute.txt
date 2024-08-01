@@ -1,0 +1,17 @@
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.deps.json
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Field.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Field.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\TypeBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.csproj.AssemblyReference.cache
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\Attacker.C3A03D74.Up2Date
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\refint\AttackerBoat.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\ref\AttackerBoat.dll

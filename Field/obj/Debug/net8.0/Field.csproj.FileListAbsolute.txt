@@ -1,0 +1,15 @@
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\Field.deps.json
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\Field.dll
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\Field.pdb
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.dll
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\refint\Field.dll
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.pdb
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\ref\Field.dll
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.pdb
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.AssemblyReference.cache
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.Up2Date

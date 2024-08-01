@@ -1,0 +1,17 @@
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.deps.json
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Field.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Field.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\TypeBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.csproj.AssemblyReference.cache
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.csproj.Up2Date
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\refint\AdderBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\ref\AdderBoat.dll

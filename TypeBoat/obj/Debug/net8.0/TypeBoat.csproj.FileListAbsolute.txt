@@ -1,0 +1,11 @@
+D:\C++ проекты\SeaBattle_C#\TypeBoat\bin\Debug\net8.0\TypeBoat.deps.json
+D:\C++ проекты\SeaBattle_C#\TypeBoat\bin\Debug\net8.0\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\TypeBoat\bin\Debug\net8.0\TypeBoat.pdb
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\refint\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.pdb
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\ref\TypeBoat.dll
