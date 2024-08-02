@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AttackerBoat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e112f2cb27a3b7f242ee14bf13a320d5d4db01d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AttackerBoat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AttackerBoat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SeaBattle_C#")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PlayerLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e112f2cb27a3b7f242ee14bf13a320d5d4db01d")]
-[assembly: System.Reflection.AssemblyProductAttribute("SeaBattle_C#")]
-[assembly: System.Reflection.AssemblyTitleAttribute("SeaBattle_C#")]
+[assembly: System.Reflection.AssemblyProductAttribute("PlayerLib")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PlayerLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

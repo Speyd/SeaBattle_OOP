@@ -23,7 +23,7 @@ namespace AdderBoat
             return emptyCellCounter == boat.Size ? true : false;
         }
 
-        public void addBoat(Boat boat, DirectionAddition direction)
+        public void addBoat(Boat boat)
         {
             if (checkerFreePlace(boat) == false)
             {
@@ -32,6 +32,24 @@ namespace AdderBoat
             }
 
             mainField.boats.Add(boat);
+            mainField.updateFieldWithBoats();
+        }
+        public void addBoat(Boat[] boats)
+        {
+            int amountFreePlace = 0;
+            foreach(Boat boat in boats)
+            {
+                if (checkerFreePlace(boat) == true)
+                    amountFreePlace++;
+            }
+
+            if (amountFreePlace != boats.Length)
+            {
+                Console.WriteLine("Add Error!");
+                return;
+            }
+
+            mainField.boats.AddRange(boats);
             mainField.updateFieldWithBoats();
         }
 

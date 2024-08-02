@@ -10,7 +10,7 @@ try
     Boat boat = new Boat(3, new Vector2(0,0), DirectionAddition.LEFT, 'K');
     Adder adder = new Adder(mainField);
     Attacker attacker = new Attacker();
-    adder.addBoat(boat, DirectionAddition.RIGHT);
+    adder.addBoat(boat);
 
     mainField.printField();
     attacker.attack(mainField, 1,0);

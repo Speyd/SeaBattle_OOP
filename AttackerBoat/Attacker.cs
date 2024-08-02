@@ -1,4 +1,5 @@
 ﻿using Field;
+using System.Numerics;
 using TypeBoat;
 
 namespace AttackerBoat
@@ -26,19 +27,25 @@ namespace AttackerBoat
 
             return true;
         }
-        public void attack(MainField mainField, int line, int column)
+        public bool attack(MainField mainField, int line, int column)
         {
 
             if (checkingConditions(mainField, line, column) == false)
-                return;
+                return false;
 
 
 
             PartBoat? partBoat = mainField.findBoat(line, column);
+            if (partBoat is null)
+                return false;
 
-            if (partBoat is not null)
-                partBoat.Symbol = mainField.fieldInfo.ShipDefeat;
+            partBoat.Symbol = mainField.fieldInfo.ShipDefeat;
             mainField.updateFieldWithBoats();
+            return true;
+        }
+        public bool attack(MainField mainField, Vector2 coordinates)
+        {
+            return attack(mainField, (int)coordinates.Y, (int)coordinates.X);
         }
     }
 }

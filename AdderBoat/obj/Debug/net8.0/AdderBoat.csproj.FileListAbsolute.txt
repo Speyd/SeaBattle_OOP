@@ -15,3 +15,4 @@ D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\refint\AdderBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\ref\AdderBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.sourcelink.json

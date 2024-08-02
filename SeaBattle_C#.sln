@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeBoat", "TypeBoat\TypeBo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdderBoat", "AdderBoat\AdderBoat.csproj", "{8B324589-DA13-4ACF-85AD-9B772EFCB668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttackerBoat", "AttackerBoat\AttackerBoat.csproj", "{A5E6C583-BAF4-49DB-893A-58805599F355}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttackerBoat", "AttackerBoat\AttackerBoat.csproj", "{A5E6C583-BAF4-49DB-893A-58805599F355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerLib", "PlayerLib\PlayerLib.csproj", "{D0BC8998-0BDC-4E14-A614-4181AAAF84BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A5E6C583-BAF4-49DB-893A-58805599F355}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E6C583-BAF4-49DB-893A-58805599F355}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E6C583-BAF4-49DB-893A-58805599F355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BC8998-0BDC-4E14-A614-4181AAAF84BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BC8998-0BDC-4E14-A614-4181AAAF84BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BC8998-0BDC-4E14-A614-4181AAAF84BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BC8998-0BDC-4E14-A614-4181AAAF84BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
