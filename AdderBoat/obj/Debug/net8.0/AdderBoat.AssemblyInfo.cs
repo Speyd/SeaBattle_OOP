@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdderBoat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e112f2cb27a3b7f242ee14bf13a320d5d4db01d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7cca9861c2e257be6c7f60bf8da542377debbce")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdderBoat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdderBoat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

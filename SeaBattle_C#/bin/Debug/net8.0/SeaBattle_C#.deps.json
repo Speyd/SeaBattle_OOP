@@ -11,6 +11,7 @@
           "AdderBoat": "1.0.0",
           "AttackerBoat": "1.0.0",
           "Field": "1.0.0",
+          "PlayerLib": "1.0.0",
           "TypeBoat": "1.0.0"
         },
         "runtime": {
@@ -42,6 +43,15 @@
           "Field.dll": {}
         }
       },
+      "PlayerLib/1.0.0": {
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "AttackerBoat": "1.0.0"
+        },
+        "runtime": {
+          "PlayerLib.dll": {}
+        }
+      },
       "TypeBoat/1.0.0": {
         "runtime": {
           "TypeBoat.dll": {}
@@ -66,6 +76,11 @@
       "sha512": ""
     },
     "Field/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PlayerLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

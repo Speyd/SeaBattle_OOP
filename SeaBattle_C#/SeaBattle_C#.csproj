@@ -12,6 +12,7 @@
     <ProjectReference Include="..\AdderBoat\AdderBoat.csproj" />
     <ProjectReference Include="..\AttackerBoat\AttackerBoat.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
+    <ProjectReference Include="..\PlayerLib\PlayerLib.csproj" />
     <ProjectReference Include="..\TypeBoat\TypeBoat.csproj" />
   </ItemGroup>
 

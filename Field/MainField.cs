@@ -51,7 +51,7 @@ namespace Field
             {
                 foreach (Vector2 coordinates in boat.getCoordinates())
                 {
-                    field[(int)coordinates.Y][(int)coordinates.X] = boat.getSymbol(coordinates) ?? fieldInfo.EmptyCell;
+                    field[(int)coordinates.X][(int)coordinates.Y] = boat.getSymbol(coordinates) ?? fieldInfo.EmptyCell;
                 }
             }
         }

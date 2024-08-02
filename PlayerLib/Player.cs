@@ -17,27 +17,24 @@ namespace PlayerLib
 
 
         #region Constructor
-        public Player(Boat[] boats, MainField field)
+        public Player(MainField field, Boat[]? boats = null)
         {
             this.field = field;
 
             adder = new Adder(field);
-            adder.addBoats(boats);
+            if(boats is not null)
+                adder.addBoat(boats);
         }
-        public Player(MainField field, int amountBoat = 0)
-            :this(new Boat[amountBoat], field)
-        {}
 
-        public Player(Boat[] boats, int line, int column, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X')
+        public Player(int line, int column, Boat[]? boats = null,
+                     char emptyCell = '.', char missCell = '0', char shipDefeat = 'X')
         {
             field = new MainField(line, column, emptyCell, missCell, shipDefeat);
 
             adder = new Adder(field);
-            adder.addBoat(boats);
+            if (boats is not null)
+                adder.addBoat(boats);
         }
-        public Player(int line, int column, int amountBoat = 0, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X') 
-            : this(new Boat[amountBoat], new MainField(line, column, emptyCell, missCell, shipDefeat))
-        {}
         #endregion
 
         #region AddBoat
@@ -67,5 +64,10 @@ namespace PlayerLib
                 Score++;
         }
         #endregion
+
+        public void printField()
+        {
+            field.printField();
+        }
     }
 }

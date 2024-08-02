@@ -23,3 +23,5 @@ D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\AdderBoat.pdb
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\AttackerBoat.dll
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\AttackerBoat.pdb
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\obj\Debug\net8.0\SeaBattle_C#.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\PlayerLib.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\PlayerLib.pdb

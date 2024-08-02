@@ -13,3 +13,4 @@ D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.dll
 D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.pdb
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.AssemblyReference.cache
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.Up2Date
+D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.sourcelink.json
