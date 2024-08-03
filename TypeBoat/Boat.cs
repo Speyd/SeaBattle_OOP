@@ -12,7 +12,7 @@ namespace TypeBoat
         private PartBoat[] boat = { };
 
 
-        private RefDelegate directionDetermination(DirectionAddition directionAdd)
+        public static RefDelegate directionDetermination(DirectionAddition directionAdd)
         {
             switch (directionAdd)
             {
@@ -75,6 +75,13 @@ namespace TypeBoat
         public char? getSymbol(int line, int column)
         {
             return findPartCoordinates(new Coordinates(line, column))?.Symbol;
+        }
+
+        public char? getSymbol(int index)
+        {
+            if (index < 0 || index >= Size)
+                throw new IndexOutOfRangeException("index");
+            return boat[index].Symbol;
         }
         public char? getSymbol(Coordinates coordinates)
         {

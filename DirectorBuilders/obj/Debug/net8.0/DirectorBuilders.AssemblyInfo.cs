@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DirectorBuilders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4af97c30735b056a2bd9c1b18198a996c0681b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2502f30fc3d182c7b8753e8cec0f2c297338dbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DirectorBuilders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DirectorBuilders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

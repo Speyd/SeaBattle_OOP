@@ -34,18 +34,31 @@ namespace Field
             resetField();
         }
 
-        public PartBoat? findBoat(int line, int column)
+        public PartBoat? findBoat(Coordinates coordinates)
         {
             foreach(Boat boat in boats)
             {
                 foreach (PartBoat partBoat in boat.getPartBoats())
                 {
-                    if (partBoat.Position == new Coordinates(line, column))
+                    if (partBoat.Position == coordinates)
                         return partBoat;
                 }
             }
             return null;
         }
+        public int findIndexBoat(Coordinates coordinates)
+        {
+            for(int i = 0; i < boats.Count; i++)
+            {
+                foreach (PartBoat partBoat in boats[i].getPartBoats())
+                {
+                    if (partBoat.Position == coordinates)
+                        return i;
+                }
+            }
+            return -1;
+        }
+
         public void updateFieldWithBoats()
         {
             foreach (Boat boat in boats)

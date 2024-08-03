@@ -56,15 +56,12 @@ namespace PlayerLib
         #region Attack
         public void attack(MainField targetField, Coordinates coordinates)
         {
-            if (attacker.attack(targetField, coordinates) == true)
-                Score++;
-        }
-        public void attack(MainField targetField, int line, int column)
-        {
-            if(attacker.attack(targetField, line, column) == true) 
+            if (attacker.attack(targetField, coordinates) == CheckingResult.SUCCESS)
                 Score++;
         }
         #endregion
+
+        public MainField getMainField() => field;
 
         public void printField()
         {

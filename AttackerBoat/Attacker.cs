@@ -1,16 +1,24 @@
 ﻿using Coordinates2D;
 using Field;
+using System.Data.Common;
 using System.Numerics;
 using TypeBoat;
 
 namespace AttackerBoat
 {
+    public enum CheckingResult
+    {
+        SUCCESS,
+        NO_SUCCESS,
+        MISS,
+    }
+
     public class Attacker
     {
-        private bool checkingConditions(MainField mainField, int line, int column)
+        public CheckingResult checkingConditions(MainField mainField, int line, int column)
         {
             if (line < 0 || line >= mainField.fieldInfo.Line ||
-                           column < 0 || column >= mainField.fieldInfo.Column)
+                column < 0 || column >= mainField.fieldInfo.Column)
             {
                 throw new ArgumentOutOfRangeException("index");
             }
@@ -20,33 +28,32 @@ namespace AttackerBoat
                 case var cell when cell == mainField.fieldInfo.EmptyCell:
                     mainField.field[line][column] = mainField.fieldInfo.MissCell;
                     Console.WriteLine("Missed!");
-                    return false;
+                    return CheckingResult.MISS;
                 case var cell when cell == mainField.fieldInfo.ShipDefeat:
-                    Console.WriteLine("Missed!");
-                    return false;
+                    Console.WriteLine("You have already attacked this cell!");
+                    return CheckingResult.NO_SUCCESS;
+                case var cell when cell == mainField.fieldInfo.MissCell:
+                    Console.WriteLine("You have already attacked this cell!");
+                    return CheckingResult.NO_SUCCESS;
             }
 
-            return true;
+            return CheckingResult.SUCCESS;
         }
-        public bool attack(MainField mainField, int line, int column)
+        public CheckingResult attack(MainField mainField, Coordinates coordinates)
         {
+            CheckingResult result = checkingConditions(mainField, coordinates.Line, coordinates.Column);         
+            if(result != CheckingResult.SUCCESS)
+                return result;
 
-            if (checkingConditions(mainField, line, column) == false)
-                return false;
 
 
-
-            PartBoat? partBoat = mainField.findBoat(line, column);
+            PartBoat? partBoat = mainField.findBoat(coordinates);
             if (partBoat is null)
-                return false;
+                return CheckingResult.NO_SUCCESS;
 
             partBoat.Symbol = mainField.fieldInfo.ShipDefeat;
             mainField.updateFieldWithBoats();
-            return true;
-        }
-        public bool attack(MainField mainField, Coordinates coordinates)
-        {
-            return attack(mainField, (int)coordinates.Line, (int)coordinates.Column);
+            return CheckingResult.SUCCESS;
         }
     }
 }

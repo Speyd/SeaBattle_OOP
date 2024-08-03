@@ -33,16 +33,27 @@ try
     if(boat is not null)
         adder.addBoat(boat);
 
-    Player player = new Player(2, 2);
-    player.addBoat(1, new Coordinates(0, 0), DirectionAddition.RIGHT, 'S');
+    Player player = new Player(3, 3);
+    battleshipBuilder.reset(new Coordinates(1, 0), DirectionAddition.RIGHT);
+
+    if (boat is not null)
+        player.addBoat(boat);
+    attacker.attack(player.getMainField(), new Coordinates(1, 0));
+    attacker.attack(player.getMainField(), new Coordinates(1, 1));
+
     player.printField();
     Console.WriteLine("");
-    Console.WriteLine(player.Score);
+    //Console.WriteLine(player.Score);
+    bot.attack(player.getMainField());
+    //bot.attack(player.getMainField());
+    //bot.attack(player.getMainField());
 
-    mainField.printField();
-    player.attack(mainField, 1, 0);
-    Console.WriteLine(player.Score);
-    mainField.printField();
+    Console.WriteLine("");
+    player.printField();
+    //mainField.printField();
+    //player.attack(mainField, 1, 0);
+    //Console.WriteLine(player.Score);
+    //mainField.printField();
 
 }
 catch(Exception e)
