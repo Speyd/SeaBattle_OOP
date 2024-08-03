@@ -9,3 +9,8 @@ D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.dll
 D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\refint\TypeBoat.dll
 D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.pdb
 D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\ref\TypeBoat.dll
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.csproj.AssemblyReference.cache
+D:\C++ проекты\SeaBattle_C#\TypeBoat\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\TypeBoat\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\TypeBoat\obj\Debug\net8.0\TypeBoat.csproj.Up2Date

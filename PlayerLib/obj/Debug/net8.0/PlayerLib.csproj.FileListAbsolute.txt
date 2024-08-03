@@ -20,3 +20,5 @@ D:\C++ проекты\SeaBattle_C#\PlayerLib\obj\Debug\net8.0\PlayerLib.dll
 D:\C++ проекты\SeaBattle_C#\PlayerLib\obj\Debug\net8.0\refint\PlayerLib.dll
 D:\C++ проекты\SeaBattle_C#\PlayerLib\obj\Debug\net8.0\PlayerLib.pdb
 D:\C++ проекты\SeaBattle_C#\PlayerLib\obj\Debug\net8.0\ref\PlayerLib.dll
+D:\C++ проекты\SeaBattle_C#\PlayerLib\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\PlayerLib\bin\Debug\net8.0\Coordinates2D.pdb

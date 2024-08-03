@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "TypeBoat/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
         "runtime": {
           "TypeBoat.dll": {}
+        }
+      },
+      "Coordinates2D/1.0.0": {
+        "runtime": {
+          "Coordinates2D.dll": {}
         }
       }
     }
   },
   "libraries": {
     "TypeBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Coordinates2D/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

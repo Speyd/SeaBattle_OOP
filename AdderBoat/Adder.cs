@@ -11,30 +11,31 @@ namespace AdderBoat
             int emptyCellCounter = 0;
             foreach(PartBoat partBoat in boat.getPartBoats())
             {
-                if (partBoat.Position.Y < 0 || partBoat.Position.Y >= mainField.fieldInfo.Line ||
-                    partBoat.Position.X < 0 || partBoat.Position.X >= mainField.fieldInfo.Column)
+                if (partBoat.Position.Line < 0 || partBoat.Position.Line >= mainField.fieldInfo.Line ||
+                    partBoat.Position.Column < 0 || partBoat.Position.Column >= mainField.fieldInfo.Column)
                 {
                     return false;
                 }
-                else if (mainField.field[(int)partBoat.Position.Y][(int)partBoat.Position.X] == mainField.fieldInfo.EmptyCell)
+                else if (mainField.field[partBoat.Position.Line][partBoat.Position.Column] == mainField.fieldInfo.EmptyCell)
                     emptyCellCounter++;
             }
 
             return emptyCellCounter == boat.Size ? true : false;
         }
 
-        public void addBoat(Boat boat)
+        public bool addBoat(Boat boat)
         {
             if (checkerFreePlace(boat) == false)
             {
                 Console.WriteLine("Add Error!");
-                return;
+                return false;
             }
 
             mainField.boats.Add(boat);
             mainField.updateFieldWithBoats();
+            return true;
         }
-        public void addBoat(Boat[] boats)
+        public bool addBoat(Boat[] boats)
         {
             int amountFreePlace = 0;
             foreach(Boat boat in boats)
@@ -46,11 +47,12 @@ namespace AdderBoat
             if (amountFreePlace != boats.Length)
             {
                 Console.WriteLine("Add Error!");
-                return;
+                return false;
             }
 
             mainField.boats.AddRange(boats);
             mainField.updateFieldWithBoats();
+            return true;
         }
 
     }

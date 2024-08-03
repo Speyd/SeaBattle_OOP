@@ -2,6 +2,7 @@
 using System.Numerics;
 using System.Reflection;
 using TypeBoat;
+using Coordinates2D;
 
 namespace Field
 {
@@ -39,7 +40,7 @@ namespace Field
             {
                 foreach (PartBoat partBoat in boat.getPartBoats())
                 {
-                    if (partBoat.Position == new Vector2(line, column))
+                    if (partBoat.Position == new Coordinates(line, column))
                         return partBoat;
                 }
             }
@@ -49,9 +50,9 @@ namespace Field
         {
             foreach (Boat boat in boats)
             {
-                foreach (Vector2 coordinates in boat.getCoordinates())
+                foreach (Coordinates coordinates in boat.getCoordinates())
                 {
-                    field[(int)coordinates.X][(int)coordinates.Y] = boat.getSymbol(coordinates) ?? fieldInfo.EmptyCell;
+                    field[coordinates.Line][coordinates.Column] = boat.getSymbol(coordinates) ?? fieldInfo.EmptyCell;
                 }
             }
         }

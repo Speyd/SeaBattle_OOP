@@ -8,13 +8,22 @@
     ".NETCoreApp,Version=v8.0": {
       "Field/1.0.0": {
         "dependencies": {
+          "Coordinates2D": "1.0.0",
           "TypeBoat": "1.0.0"
         },
         "runtime": {
           "Field.dll": {}
         }
       },
+      "Coordinates2D/1.0.0": {
+        "runtime": {
+          "Coordinates2D.dll": {}
+        }
+      },
       "TypeBoat/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
         "runtime": {
           "TypeBoat.dll": {}
         }
@@ -23,6 +32,11 @@
   },
   "libraries": {
     "Field/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Coordinates2D/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,30 +1,51 @@
 ﻿using Field;
 using TypeBoat;
+using Builders;
 using AdderBoat;
 using PlayerLib;
 using AttackerBoat;
+using Coordinates2D;
 using System.Numerics;
+using DirectorBuilders;
 
 try
 {
+
+    IBuilder builder = new BattleshipBuilder();
+    Director director = new Director(builder);
+    Boat? boat_1 = director.creatBoat(new Coordinates(1, 0), DirectionAddition.LEFT);
+    Console.WriteLine($"Vector2: {boat_1?.getCoordinate(boat_1.Size - 1)}\nDirectionAddition: {boat_1?.DirectionAdd.ToString()}");
+
+
+    //Bot bot = new Bot(6, 6);
+    Console.WriteLine("BOT:");
+    //bot.printField();
+    Console.WriteLine("");
+    Console.WriteLine("");
     MainField mainField = new MainField(2, 3);
-    Boat boat = new Boat(1, new Vector2(1,0), DirectionAddition.LEFT, 'K');
+
+    CruiserBuilder battleshipBuilder = new CruiserBuilder();
+    battleshipBuilder.reset(new Coordinates(1, 0), DirectionAddition.RIGHT);
+    Boat? boat = battleshipBuilder.getResult();
+
     Adder adder = new Adder(mainField);
     Attacker attacker = new Attacker();
-    adder.addBoat(boat);
+    if(boat is not null)
+        adder.addBoat(boat);
 
-    Player player = new Player(2,2);
-    player.addBoat(1, new Vector2(0,0), DirectionAddition.RIGHT, 'S');
+    Player player = new Player(2, 2);
+    player.addBoat(1, new Coordinates(0, 0), DirectionAddition.RIGHT, 'S');
     player.printField();
-    Console.WriteLine(""); 
+    Console.WriteLine("");
     Console.WriteLine(player.Score);
 
     mainField.printField();
-    player.attack(mainField, 1,0);
+    player.attack(mainField, 1, 0);
     Console.WriteLine(player.Score);
-    mainField.printField(); 
+    mainField.printField();
 
-}catch(Exception e)
+}
+catch(Exception e)
 {
     Console.WriteLine(e.Message);
 }

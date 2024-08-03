@@ -12,5 +12,6 @@ namespace TypeBoat
         RIGHT, 
         UP, 
         DOWN,
+        MAX
     }
 }

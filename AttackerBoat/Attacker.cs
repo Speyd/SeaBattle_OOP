@@ -1,4 +1,5 @@
-﻿using Field;
+﻿using Coordinates2D;
+using Field;
 using System.Numerics;
 using TypeBoat;
 
@@ -43,9 +44,9 @@ namespace AttackerBoat
             mainField.updateFieldWithBoats();
             return true;
         }
-        public bool attack(MainField mainField, Vector2 coordinates)
+        public bool attack(MainField mainField, Coordinates coordinates)
         {
-            return attack(mainField, (int)coordinates.Y, (int)coordinates.X);
+            return attack(mainField, (int)coordinates.Line, (int)coordinates.Column);
         }
     }
 }

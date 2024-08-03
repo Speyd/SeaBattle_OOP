@@ -11,6 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\AdderBoat\AdderBoat.csproj" />
     <ProjectReference Include="..\AttackerBoat\AttackerBoat.csproj" />
+    <ProjectReference Include="..\Builders\Builders.csproj" />
+    <ProjectReference Include="..\Coordinates2D\Coordinates2D.csproj" />
+    <ProjectReference Include="..\DirectorBuilders\DirectorBuilders.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
     <ProjectReference Include="..\PlayerLib\PlayerLib.csproj" />
     <ProjectReference Include="..\TypeBoat\TypeBoat.csproj" />

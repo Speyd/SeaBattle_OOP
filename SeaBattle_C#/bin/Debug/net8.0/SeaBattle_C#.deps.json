@@ -10,6 +10,9 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "AttackerBoat": "1.0.0",
+          "Builders": "1.0.0",
+          "Coordinates2D": "1.0.0",
+          "DirectorBuilders": "1.0.0",
           "Field": "1.0.0",
           "PlayerLib": "1.0.0",
           "TypeBoat": "1.0.0"
@@ -35,8 +38,31 @@
           "AttackerBoat.dll": {}
         }
       },
+      "Builders/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0",
+          "TypeBoat": "1.0.0"
+        },
+        "runtime": {
+          "Builders.dll": {}
+        }
+      },
+      "Coordinates2D/1.0.0": {
+        "runtime": {
+          "Coordinates2D.dll": {}
+        }
+      },
+      "DirectorBuilders/1.0.0": {
+        "dependencies": {
+          "Builders": "1.0.0"
+        },
+        "runtime": {
+          "DirectorBuilders.dll": {}
+        }
+      },
       "Field/1.0.0": {
         "dependencies": {
+          "Coordinates2D": "1.0.0",
           "TypeBoat": "1.0.0"
         },
         "runtime": {
@@ -53,6 +79,9 @@
         }
       },
       "TypeBoat/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
         "runtime": {
           "TypeBoat.dll": {}
         }
@@ -71,6 +100,21 @@
       "sha512": ""
     },
     "AttackerBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Builders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Coordinates2D/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DirectorBuilders/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

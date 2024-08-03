@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DirectorBuilders/1.0.0": {
+        "dependencies": {
+          "Builders": "1.0.0"
+        },
+        "runtime": {
+          "DirectorBuilders.dll": {}
+        }
+      },
+      "Builders/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0",
+          "TypeBoat": "1.0.0"
+        },
+        "runtime": {
+          "Builders.dll": {}
+        }
+      },
+      "Coordinates2D/1.0.0": {
+        "runtime": {
+          "Coordinates2D.dll": {}
+        }
+      },
+      "TypeBoat/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
+        "runtime": {
+          "TypeBoat.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DirectorBuilders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Builders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Coordinates2D/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

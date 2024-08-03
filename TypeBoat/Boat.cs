@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coordinates2D;
+using System;
 using System.Numerics;
 
 namespace TypeBoat
@@ -11,25 +12,25 @@ namespace TypeBoat
         private PartBoat[] boat = { };
 
 
-        private RefDelegate directionDetermination()
+        private RefDelegate directionDetermination(DirectionAddition directionAdd)
         {
-            switch (DirectionAdd)
+            switch (directionAdd)
             {
                 case DirectionAddition.UP:
-                    return (ref Vector2 coordinates) => coordinates.Y--;
+                    return (ref Coordinates coordinates) => coordinates.Line--;
                 case DirectionAddition.DOWN:
-                    return (ref Vector2 coordinates) => coordinates.Y++;
+                    return (ref Coordinates coordinates) => coordinates.Line++;
                 case DirectionAddition.LEFT:
-                    return (ref Vector2 coordinates) => coordinates.X--;
+                    return (ref Coordinates coordinates) => coordinates.Column--;
                 case DirectionAddition.RIGHT:
-                    return (ref Vector2 coordinates) => coordinates.X++;
+                    return (ref Coordinates coordinates) => coordinates.Column++;
             }
 
-            return (ref Vector2 coordinates) => { };
+            return (ref Coordinates coordinates) => { };
         }
-        private void fillPartBoat(Vector2 coordinates, char symbol)
+        public void fillPartBoat(Coordinates coordinates, DirectionAddition directionAdd, char symbol)
         {
-            RefDelegate action = directionDetermination();
+            RefDelegate action = directionDetermination(directionAdd);
 
             for (int i = 0; i < Size; i++)
             {
@@ -39,13 +40,13 @@ namespace TypeBoat
         }
 
 
-        public Boat(int size, Vector2 coordinates, DirectionAddition directionAdd, char symbol)
+        public Boat(int size, Coordinates coordinates, DirectionAddition directionAdd, char symbol)
         {
             Size = size <= 0 ? 1 : size;
             DirectionAdd = directionAdd;
 
             boat = new PartBoat[Size];
-            fillPartBoat(coordinates, symbol);
+            fillPartBoat(coordinates, directionAdd, symbol);
         }
 
 
@@ -53,13 +54,13 @@ namespace TypeBoat
         {
             for (int i = 0; i < Size; ++i)
             {
-                if (boat[i].Position == new Vector2(line, column))
+                if (boat[i].Position == new Coordinates(line, column))
                     return true;
             }
 
             return false;
         }
-        private PartBoat? findPartCoordinates(Vector2 coordinates)
+        private PartBoat? findPartCoordinates(Coordinates coordinates)
         {
             for (int i = 0; i < Size; ++i)
             {
@@ -73,23 +74,23 @@ namespace TypeBoat
 
         public char? getSymbol(int line, int column)
         {
-            return findPartCoordinates(new Vector2(line, column))?.Symbol;
+            return findPartCoordinates(new Coordinates(line, column))?.Symbol;
         }
-        public char? getSymbol(Vector2 coordinates)
+        public char? getSymbol(Coordinates coordinates)
         {
             return findPartCoordinates(coordinates)?.Symbol;
         }
 
 
-        public Vector2[] getCoordinates()
+        public Coordinates[] getCoordinates()
         {
-            Vector2[] coordinates = new Vector2[Size];
+            Coordinates[] coordinates = new Coordinates[Size];
             for(int i = 0; i < Size; ++i)
                 coordinates[i] = boat[i].Position;
 
             return coordinates;
         }
-        public Vector2 getCoordinate(int index)
+        public Coordinates getCoordinate(int index)
         {
             if(index < 0 || index >= Size) 
                 throw new ArgumentOutOfRangeException("index");
@@ -111,5 +112,5 @@ namespace TypeBoat
         }
     }
 
-    public delegate void RefDelegate(ref Vector2 coordinate);
+    public delegate void RefDelegate(ref Coordinates coordinate);
 }

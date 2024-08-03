@@ -1,0 +1,12 @@
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\bin\Debug\net8.0\Coordinates2D.deps.json
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\refint\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\Coordinates2D\obj\Debug\net8.0\ref\Coordinates2D.dll

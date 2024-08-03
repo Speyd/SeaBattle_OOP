@@ -16,3 +16,5 @@ D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\refint\AdderBoat.d
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\ref\AdderBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Coordinates2D.pdb

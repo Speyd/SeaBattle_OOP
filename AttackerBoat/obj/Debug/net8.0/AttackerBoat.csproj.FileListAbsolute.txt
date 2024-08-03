@@ -16,3 +16,5 @@ D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\refint\Attacker
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\ref\AttackerBoat.dll
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Coordinates2D.pdb

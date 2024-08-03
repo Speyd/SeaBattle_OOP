@@ -4,6 +4,7 @@ using TypeBoat;
 using AdderBoat;
 using System.Numerics;
 using System.Drawing;
+using Coordinates2D;
 
 namespace PlayerLib
 {
@@ -38,7 +39,7 @@ namespace PlayerLib
         #endregion
 
         #region AddBoat
-        public void addBoat(int size, Vector2 coordinates, DirectionAddition direction, char symbol)
+        public void addBoat(int size, Coordinates coordinates, DirectionAddition direction, char symbol)
         {
             adder.addBoat(new Boat(size, coordinates, direction, symbol));
         }
@@ -53,7 +54,7 @@ namespace PlayerLib
         #endregion
 
         #region Attack
-        public void attack(MainField targetField, Vector2 coordinates)
+        public void attack(MainField targetField, Coordinates coordinates)
         {
             if (attacker.attack(targetField, coordinates) == true)
                 Score++;
