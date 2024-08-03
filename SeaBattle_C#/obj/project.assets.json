@@ -85,7 +85,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AdderBoat": "1.0.0",
-          "AttackerBoat": "1.0.0"
+          "AttackerBoat": "1.0.0",
+          "Builders": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PlayerLib.dll": {}

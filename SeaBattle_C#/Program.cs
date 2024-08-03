@@ -17,9 +17,9 @@ try
     Console.WriteLine($"Vector2: {boat_1?.getCoordinate(boat_1.Size - 1)}\nDirectionAddition: {boat_1?.DirectionAdd.ToString()}");
 
 
-    //Bot bot = new Bot(6, 6);
+    Bot bot = new Bot(6, 6);
     Console.WriteLine("BOT:");
-    //bot.printField();
+    bot.printField();
     Console.WriteLine("");
     Console.WriteLine("");
     MainField mainField = new MainField(2, 3);

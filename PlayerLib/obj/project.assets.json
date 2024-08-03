@@ -29,6 +29,20 @@
           "bin/placeholder/AttackerBoat.dll": {}
         }
       },
+      "Builders/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Coordinates2D": "1.0.0",
+          "TypeBoat": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Builders.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Builders.dll": {}
+        }
+      },
       "Coordinates2D/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -79,6 +93,11 @@
       "path": "../AttackerBoat/AttackerBoat.csproj",
       "msbuildProject": "../AttackerBoat/AttackerBoat.csproj"
     },
+    "Builders/1.0.0": {
+      "type": "project",
+      "path": "../Builders/Builders.csproj",
+      "msbuildProject": "../Builders/Builders.csproj"
+    },
     "Coordinates2D/1.0.0": {
       "type": "project",
       "path": "../Coordinates2D/Coordinates2D.csproj",
@@ -98,7 +117,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AdderBoat >= 1.0.0",
-      "AttackerBoat >= 1.0.0"
+      "AttackerBoat >= 1.0.0",
+      "Builders >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -133,6 +153,9 @@
             },
             "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj": {
               "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj"
+            },
+            "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj"
             }
           }
         }

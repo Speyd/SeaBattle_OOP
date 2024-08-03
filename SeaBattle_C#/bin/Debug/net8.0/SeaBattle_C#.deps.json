@@ -72,7 +72,8 @@
       "PlayerLib/1.0.0": {
         "dependencies": {
           "AdderBoat": "1.0.0",
-          "AttackerBoat": "1.0.0"
+          "AttackerBoat": "1.0.0",
+          "Builders": "1.0.0"
         },
         "runtime": {
           "PlayerLib.dll": {}

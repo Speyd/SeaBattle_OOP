@@ -9,7 +9,8 @@
       "PlayerLib/1.0.0": {
         "dependencies": {
           "AdderBoat": "1.0.0",
-          "AttackerBoat": "1.0.0"
+          "AttackerBoat": "1.0.0",
+          "Builders": "1.0.0"
         },
         "runtime": {
           "PlayerLib.dll": {}
@@ -30,6 +31,15 @@
         },
         "runtime": {
           "AttackerBoat.dll": {}
+        }
+      },
+      "Builders/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0",
+          "TypeBoat": "1.0.0"
+        },
+        "runtime": {
+          "Builders.dll": {}
         }
       },
       "Coordinates2D/1.0.0": {
@@ -68,6 +78,11 @@
       "sha512": ""
     },
     "AttackerBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Builders/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

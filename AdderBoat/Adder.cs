@@ -23,9 +23,9 @@ namespace AdderBoat
             return emptyCellCounter == boat.Size ? true : false;
         }
 
-        public bool addBoat(Boat boat)
+        public bool addBoat(Boat? boat)
         {
-            if (checkerFreePlace(boat) == false)
+            if (boat is null || checkerFreePlace(boat) == false)
             {
                 Console.WriteLine("Add Error!");
                 return false;
