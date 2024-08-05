@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TypeBoat;
 using Builders;
 using Coordinates2D;
+using System.Collections;
 
 namespace PlayerLib
 {
@@ -24,13 +25,8 @@ namespace PlayerLib
             new BuilderUsage ( new ShipBuilder(), 4 )
         };
         private static Random random = new Random();
-        private static int l = 2;
 
-        private List<Coordinates> lastAttack = new List<Coordinates>() 
-        { 
-            new Coordinates (1, 0),
-            new Coordinates (1, 1),
-        };
+        private List<Coordinates> lastAttack = new List<Coordinates>();
         private Attacker attacker = new Attacker();
         private MainField field;
         private Adder adder;
@@ -54,6 +50,15 @@ namespace PlayerLib
             fillFieldWithBoad();
         }
         #endregion
+
+        private Coordinates getRandomCoordinates(MainField mainField)
+        {
+            int maxLine = mainField.fieldInfo.Line - 1;
+            int maxColumn = mainField.fieldInfo.Column - 1;
+
+            return new Coordinates(random.Next(0, maxLine), random.Next(0, maxColumn));
+        }
+
         public void fillFieldWithBoad()
         {
             foreach(BuilderUsage builderUsage in builders)
@@ -66,7 +71,7 @@ namespace PlayerLib
                     {
                         builderUsage.Builder.reset
                             (
-                            new Coordinates(random.Next(0, field.fieldInfo.Line), random.Next(0, field.fieldInfo.Column)),
+                            getRandomCoordinates(field),
                             (DirectionAddition)random.Next(0, (int)DirectionAddition.MAX - 1)
                             );
 
@@ -78,61 +83,68 @@ namespace PlayerLib
             }
         }
 
+        #region Attack
+        private DirectionAddition DeterminingDirectionOfMultiShip()
+        {
+            if (lastAttack[0].Column - lastAttack[1].Column == 0)
+            {
+                if (lastAttack[0].Line - lastAttack[1].Line == -1)
+                    return DirectionAddition.DOWN;
+                else return DirectionAddition.UP;
+            }
+            else if (lastAttack[0].Column - lastAttack[1].Column == -1)
+                return DirectionAddition.RIGHT;
+            else
+                return DirectionAddition.LEFT;
+        }
+        private void attackMultiShips(ref Coordinates attackCoordinates)
+        {  
+            attackCoordinates = lastAttack[lastAttack.Count - 1];
+            Boat.directionDetermination(DeterminingDirectionOfMultiShip())(ref attackCoordinates);
+        }
+        private void attackShip(MainField mainField, ref Coordinates attackCoordinates)
+        {
+            CheckingResult checker = CheckingResult.NO_SUCCESS;
+            while (checker == CheckingResult.NO_SUCCESS)
+            {
+                attackCoordinates = getRandomCoordinates(mainField);
+                checker = attacker.checkingConditions(mainField, attackCoordinates.Line, attackCoordinates.Column);
+            }
+        }
+        private void eventSuccessAttack(MainField mainField, ref Coordinates attackCoordinates)
+        {
+            int indexBoat = mainField.findIndexBoat(attackCoordinates);
+            if (indexBoat != -1)
+            {
+                int amountDefendPart = 0;
+                for (int i = 0; i < mainField.boats[indexBoat].Size; i++)
+                {
+                    if (mainField.boats[indexBoat].getSymbol(i) == mainField.fieldInfo.ShipDefeat)
+                        amountDefendPart++;
+                }
+
+                if (amountDefendPart == mainField.boats[indexBoat].Size)
+                    lastAttack.Clear();
+                else
+                    lastAttack.Add(attackCoordinates);
+            }
+        }
         public void attack(MainField mainField)
         {
             Coordinates attackCoordinates = new Coordinates(-1, -1);
 
             if (lastAttack.Count >= 2)
-            {
-                DirectionAddition attack;
-
-                if(lastAttack[0].Column - lastAttack[1].Column == 0)
-                {
-                    if (lastAttack[0].Line - lastAttack[1].Line == -1)
-                        attack = DirectionAddition.DOWN; 
-                    else attack = DirectionAddition.UP;
-                }
-                else if(lastAttack[0].Column - lastAttack[1].Column == -1)
-                    attack = DirectionAddition.RIGHT;
-                else
-                    attack = DirectionAddition.LEFT;
-
-
-                attackCoordinates = lastAttack[lastAttack.Count - 1];
-                Boat.directionDetermination(attack)(ref attackCoordinates);
-            }
+                attackMultiShips(ref attackCoordinates);
             else
-            {
-                CheckingResult checker = CheckingResult.NO_SUCCESS;
-                while (checker == CheckingResult.NO_SUCCESS)
-                {
-                    attackCoordinates = new Coordinates(random.Next(0, mainField.fieldInfo.Line - 1), random.Next(0, mainField.fieldInfo.Column - 1));
-                    checker = attacker.checkingConditions(mainField, attackCoordinates.Line, attackCoordinates.Column);
-                }
-            }
+                attackShip(mainField, ref attackCoordinates);
 
             Console.WriteLine(attackCoordinates);
             if(attacker.attack(mainField, attackCoordinates) == CheckingResult.SUCCESS)
-            {
-                int indexBoat = mainField.findIndexBoat(attackCoordinates);
-                if(indexBoat != -1) 
-                {
-                    int amountDefendPart = 0;
-                    for(int i = 0; i < mainField.boats[indexBoat].Size; i++)
-                    {
-                        if (mainField.boats[indexBoat].getSymbol(i) == mainField.fieldInfo.ShipDefeat)
-                            amountDefendPart++;
-                    }
-
-                    if (amountDefendPart == mainField.boats[indexBoat].Size)
-                        lastAttack.Clear();
-                    else
-                        lastAttack.Add(attackCoordinates);
-                }
-            }
+                eventSuccessAttack(mainField, ref attackCoordinates);
             else
                 lastAttack.Clear();
         }
+        #endregion
 
         public void printField()
         {
