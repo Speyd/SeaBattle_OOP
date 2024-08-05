@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Field\Field.csproj" />
+    <ProjectReference Include="..\Randomer\Randomer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,9 +10,9 @@ namespace PlayerLib
 {
     public class Player
     {
-        private Attacker attacker = new Attacker();
-        private MainField field;
+        private static Attacker attacker = new Attacker();
 
+        private MainField field;
         private Adder adder;
         public int Score { get; set; } = 0;
 

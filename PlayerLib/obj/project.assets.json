@@ -20,7 +20,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Field": "1.0.0"
+          "Field": "1.0.0",
+          "Randomer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AttackerBoat.dll": {}
@@ -67,6 +68,20 @@
           "bin/placeholder/Field.dll": {}
         }
       },
+      "Randomer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Coordinates2D": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Randomer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Randomer.dll": {}
+        }
+      },
       "TypeBoat/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -107,6 +122,11 @@
       "type": "project",
       "path": "../Field/Field.csproj",
       "msbuildProject": "../Field/Field.csproj"
+    },
+    "Randomer/1.0.0": {
+      "type": "project",
+      "path": "../Randomer/Randomer.csproj",
+      "msbuildProject": "../Randomer/Randomer.csproj"
     },
     "TypeBoat/1.0.0": {
       "type": "project",

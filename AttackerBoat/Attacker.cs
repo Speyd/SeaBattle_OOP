@@ -6,13 +6,6 @@ using TypeBoat;
 
 namespace AttackerBoat
 {
-    public enum CheckingResult
-    {
-        SUCCESS,
-        NO_SUCCESS,
-        MISS,
-    }
-
     public class Attacker
     {
         public CheckingResult checkingConditions(MainField mainField, int line, int column)
