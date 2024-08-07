@@ -2,9 +2,7 @@ D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.de
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.dll
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\AttackerBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Field.dll
-D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\TypeBoat.dll
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Field.pdb
-D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\TypeBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.csproj.AssemblyReference.cache
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.GeneratedMSBuildEditorConfig.editorconfig
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.AssemblyInfoInputs.cache
@@ -18,3 +16,7 @@ D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\ref\AttackerBoa
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\obj\Debug\net8.0\AttackerBoat.sourcelink.json
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Coordinates2D.dll
 D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Randomer.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\Randomer.pdb
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\AttackerBoat\bin\Debug\net8.0\BoatLib.pdb

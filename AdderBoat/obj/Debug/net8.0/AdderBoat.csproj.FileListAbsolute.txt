@@ -2,9 +2,7 @@ D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.deps.jso
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\AdderBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Field.dll
-D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\TypeBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Field.pdb
-D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\TypeBoat.pdb
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.csproj.AssemblyReference.cache
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.GeneratedMSBuildEditorConfig.editorconfig
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.AssemblyInfoInputs.cache
@@ -18,3 +16,13 @@ D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\ref\AdderBoat.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\obj\Debug\net8.0\AdderBoat.sourcelink.json
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Coordinates2D.dll
 D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuilderBoatData.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuildersBoat.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuilderUse.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Randomer.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuilderBoatData.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuildersBoat.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BuilderUse.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\Randomer.pdb
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\AdderBoat\bin\Debug\net8.0\BoatLib.pdb

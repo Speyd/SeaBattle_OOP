@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BoatLib\BoatLib.csproj" />
+    <ProjectReference Include="..\BuilderBoatData\BuilderBoatData.csproj" />
+    <ProjectReference Include="..\BuildersBoat\BuildersBoat.csproj" />
+    <ProjectReference Include="..\BuilderUse\BuilderUse.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
-    <ProjectReference Include="..\TypeBoat\TypeBoat.csproj" />
+    <ProjectReference Include="..\Randomer\Randomer.csproj" />
   </ItemGroup>
 
 </Project>

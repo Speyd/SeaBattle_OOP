@@ -28,11 +28,23 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
               },
-              "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj"
+              "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj"
               }
             }
           }
@@ -95,11 +107,78 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj",
+        "projectName": "BoatLib",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
               }
             }
           }
@@ -168,8 +247,20 @@
               "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj"
               },
-              "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj"
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj"
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
@@ -179,9 +270,6 @@
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Randomer\\Randomer.csproj"
-              },
-              "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj"
               }
             }
           }
@@ -220,14 +308,14 @@
         }
       }
     },
-    "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj": {
+    "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj",
-        "projectName": "Builders",
-        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj",
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj",
+        "projectName": "BuilderBoatData",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\BuilderBoatData.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\obj\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderBoatData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -244,13 +332,210 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
+              "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj"
               },
-              "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj"
+              "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj"
               }
             }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj",
+        "projectName": "BuildersBoat",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj",
+        "projectName": "BuildersField",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\AdderBoat\\AdderBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AdderBoat\\AdderBoat.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj",
+        "projectName": "BuilderUse",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\BuilderUse.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\BuilderUse\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -371,11 +656,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
-              },
-              "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj"
               }
             }
           }
@@ -438,75 +723,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj",
-        "projectName": "TypeBoat",
-        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\TypeBoat.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\TypeBoat\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
-                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
               }
             }
           }

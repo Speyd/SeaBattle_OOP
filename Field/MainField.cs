@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
 using System.Reflection;
-using TypeBoat;
+using BoatLib;
 using Coordinates2D;
 
 namespace Field
@@ -34,7 +34,26 @@ namespace Field
             resetField();
         }
 
-        public PartBoat? findBoat(Coordinates coordinates)
+        public void checkShipIntegrity(Coordinates coordinates)
+        {
+            Boat? boat = findBoat(coordinates);
+
+            if (boat is null || boat.Condition == ShipCondition.DESTROYED)
+                return;
+
+
+            int amountDefeatPart = 0;
+
+            foreach (PartBoat partBoat in boat.getPartBoats())
+            {
+                if (partBoat.Symbol == fieldInfo.ShipDefeat)
+                    amountDefeatPart++;
+            }
+
+            if (amountDefeatPart == boat.Size)
+                boat.Condition = ShipCondition.DESTROYED;
+        }
+        public PartBoat? findPartBoat(Coordinates coordinates)
         {
             foreach(Boat boat in boats)
             {
@@ -46,17 +65,17 @@ namespace Field
             }
             return null;
         }
-        public int findIndexBoat(Coordinates coordinates)
+        public Boat? findBoat(Coordinates coordinates)
         {
-            for(int i = 0; i < boats.Count; i++)
+            for (int i = 0; i < boats.Count; i++)
             {
                 foreach (PartBoat partBoat in boats[i].getPartBoats())
                 {
                     if (partBoat.Position == coordinates)
-                        return i;
+                        return boats[i];
                 }
             }
-            return -1;
+            return null;
         }
 
         public void updateFieldWithBoats()

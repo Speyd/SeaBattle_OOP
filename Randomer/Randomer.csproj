@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BoatLib\BoatLib.csproj" />
     <ProjectReference Include="..\Coordinates2D\Coordinates2D.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
   </ItemGroup>

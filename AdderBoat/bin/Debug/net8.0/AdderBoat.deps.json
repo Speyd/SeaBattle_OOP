@@ -8,11 +8,46 @@
     ".NETCoreApp,Version=v8.0": {
       "AdderBoat/1.0.0": {
         "dependencies": {
+          "BoatLib": "1.0.0",
+          "BuilderBoatData": "1.0.0",
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0",
           "Field": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "Randomer": "1.0.0"
         },
         "runtime": {
           "AdderBoat.dll": {}
+        }
+      },
+      "BoatLib/1.0.0": {
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
+        "runtime": {
+          "BoatLib.dll": {}
+        }
+      },
+      "BuilderBoatData/1.0.0": {
+        "dependencies": {
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0"
+        },
+        "runtime": {
+          "BuilderBoatData.dll": {}
+        }
+      },
+      "BuildersBoat/1.0.0": {
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "runtime": {
+          "BuildersBoat.dll": {}
+        }
+      },
+      "BuilderUse/1.0.0": {
+        "runtime": {
+          "BuilderUse.dll": {}
         }
       },
       "Coordinates2D/1.0.0": {
@@ -22,25 +57,47 @@
       },
       "Field/1.0.0": {
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
         },
         "runtime": {
           "Field.dll": {}
         }
       },
-      "TypeBoat/1.0.0": {
+      "Randomer/1.0.0": {
         "dependencies": {
-          "Coordinates2D": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0",
+          "Field": "1.0.0"
         },
         "runtime": {
-          "TypeBoat.dll": {}
+          "Randomer.dll": {}
         }
       }
     }
   },
   "libraries": {
     "AdderBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BoatLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuilderBoatData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildersBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuilderUse/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -55,7 +112,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "TypeBoat/1.0.0": {
+    "Randomer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,16 @@
+D:\C++ проекты\SeaBattle_C#\BoatLib\bin\Debug\net8.0\BoatLib.deps.json
+D:\C++ проекты\SeaBattle_C#\BoatLib\bin\Debug\net8.0\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\BoatLib\bin\Debug\net8.0\BoatLib.pdb
+D:\C++ проекты\SeaBattle_C#\BoatLib\bin\Debug\net8.0\Coordinates2D.dll
+D:\C++ проекты\SeaBattle_C#\BoatLib\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.csproj.AssemblyReference.cache
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.csproj.Up2Date
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\refint\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\BoatLib.pdb
+D:\C++ проекты\SeaBattle_C#\BoatLib\obj\Debug\net8.0\ref\BoatLib.dll

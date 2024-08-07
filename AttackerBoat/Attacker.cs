@@ -2,7 +2,7 @@
 using Field;
 using System.Data.Common;
 using System.Numerics;
-using TypeBoat;
+using BoatLib;
 
 namespace AttackerBoat
 {
@@ -13,40 +13,63 @@ namespace AttackerBoat
             if (line < 0 || line >= mainField.fieldInfo.Line ||
                 column < 0 || column >= mainField.fieldInfo.Column)
             {
-                throw new ArgumentOutOfRangeException("index");
+                return CheckingResult.ERROR;
             }
 
             switch (mainField.field[line][column])
             {
                 case var cell when cell == mainField.fieldInfo.EmptyCell:
-                    mainField.field[line][column] = mainField.fieldInfo.MissCell;
-                    Console.WriteLine("Missed!");
                     return CheckingResult.MISS;
                 case var cell when cell == mainField.fieldInfo.ShipDefeat:
-                    Console.WriteLine("You have already attacked this cell!");
                     return CheckingResult.NO_SUCCESS;
                 case var cell when cell == mainField.fieldInfo.MissCell:
-                    Console.WriteLine("You have already attacked this cell!");
                     return CheckingResult.NO_SUCCESS;
             }
 
             return CheckingResult.SUCCESS;
         }
-        public CheckingResult attack(MainField mainField, Coordinates coordinates)
+
+        #region EventResult
+        private void eventSuccessResult(MainField mainField, Coordinates coordinates)
         {
-            CheckingResult result = checkingConditions(mainField, coordinates.Line, coordinates.Column);         
-            if(result != CheckingResult.SUCCESS)
-                return result;
-
-
-
-            PartBoat? partBoat = mainField.findBoat(coordinates);
+            PartBoat? partBoat = mainField.findPartBoat(coordinates);
             if (partBoat is null)
-                return CheckingResult.NO_SUCCESS;
+                throw new Exception("The ship was not found!");
 
             partBoat.Symbol = mainField.fieldInfo.ShipDefeat;
+            mainField.checkShipIntegrity(coordinates);
             mainField.updateFieldWithBoats();
-            return CheckingResult.SUCCESS;
+
+            Console.WriteLine($"An attack was made on a cell({coordinates.ToString()})");
+        }
+       
+        private void eventNoSuccessResult(MainField mainField, Coordinates coordinates)
+        {
+            Console.WriteLine("You have already attacked this cell!");
+        }
+        private void eventMiisResult(MainField mainField, Coordinates coordinates)
+        {
+            mainField.field[coordinates.Line][coordinates.Column] = mainField.fieldInfo.MissCell;
+            Console.WriteLine("Missed!");
+        }
+        #endregion
+        private void verificationActions(CheckingResult result, MainField mainField, Coordinates coordinates)
+        {
+            switch(result)
+            {
+                case CheckingResult.NO_SUCCESS:
+                    eventNoSuccessResult(mainField, coordinates); break;
+                case CheckingResult.SUCCESS:
+                    eventSuccessResult(mainField, coordinates); break;
+                case CheckingResult.MISS:
+                    eventMiisResult(mainField, coordinates); break;
+            }
+        }
+        public CheckingResult attack(MainField mainField, Coordinates coordinates)
+        {
+            CheckingResult result = checkingConditions(mainField, coordinates.Line, coordinates.Column);
+            verificationActions(result, mainField, coordinates);
+            return result;
         }
     }
 }

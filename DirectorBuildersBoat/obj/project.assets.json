@@ -1,0 +1,137 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BoatLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BoatLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoatLib.dll": {}
+        }
+      },
+      "BuildersBoat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        }
+      },
+      "Coordinates2D/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Coordinates2D.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Coordinates2D.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BoatLib/1.0.0": {
+      "type": "project",
+      "path": "../BoatLib/BoatLib.csproj",
+      "msbuildProject": "../BoatLib/BoatLib.csproj"
+    },
+    "BuildersBoat/1.0.0": {
+      "type": "project",
+      "path": "../BuildersBoat/BuildersBoat.csproj",
+      "msbuildProject": "../BuildersBoat/BuildersBoat.csproj"
+    },
+    "Coordinates2D/1.0.0": {
+      "type": "project",
+      "path": "../Coordinates2D/Coordinates2D.csproj",
+      "msbuildProject": "../Coordinates2D/Coordinates2D.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "BoatLib >= 1.0.0",
+      "BuildersBoat >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\DirectorBuildersBoat\\DirectorBuildersBoat.csproj",
+      "projectName": "DirectorBuildersBoat",
+      "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\DirectorBuildersBoat\\DirectorBuildersBoat.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\DirectorBuildersBoat\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+            },
+            "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersBoat\\BuildersBoat.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

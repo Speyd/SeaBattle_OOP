@@ -1,0 +1,12 @@
+D:\C++ проекты\SeaBattle_C#\BuilderUse\bin\Debug\net8.0\BuilderUse.deps.json
+D:\C++ проекты\SeaBattle_C#\BuilderUse\bin\Debug\net8.0\BuilderUse.dll
+D:\C++ проекты\SeaBattle_C#\BuilderUse\bin\Debug\net8.0\BuilderUse.pdb
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.dll
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\refint\BuilderUse.dll
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\BuilderUse.pdb
+D:\C++ проекты\SeaBattle_C#\BuilderUse\obj\Debug\net8.0\ref\BuilderUse.dll

@@ -1,10 +1,11 @@
 ﻿using AttackerBoat;
 using Field;
-using TypeBoat;
+using BoatLib;
 using AdderBoat;
 using System.Numerics;
 using System.Drawing;
 using Coordinates2D;
+using BuildersField;
 
 namespace PlayerLib
 {
@@ -18,6 +19,14 @@ namespace PlayerLib
 
 
         #region Constructor
+
+        public Player(IBuilderField builder, bool addBoat)
+        {
+            builder.reset(addBoat);
+            field = builder.getResult() ?? new MainField(6, 6);
+
+            adder = new Adder(field);
+        }
         public Player(MainField field, Boat[]? boats = null)
         {
             this.field = field;

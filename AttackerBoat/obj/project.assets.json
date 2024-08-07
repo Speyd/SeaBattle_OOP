@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "BoatLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BoatLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoatLib.dll": {}
+        }
+      },
       "Coordinates2D/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -16,8 +29,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Field.dll": {}
@@ -30,6 +43,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BoatLib": "1.0.0",
           "Coordinates2D": "1.0.0",
           "Field": "1.0.0"
         },
@@ -39,23 +53,15 @@
         "runtime": {
           "bin/placeholder/Randomer.dll": {}
         }
-      },
-      "TypeBoat/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Coordinates2D": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TypeBoat.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TypeBoat.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "BoatLib/1.0.0": {
+      "type": "project",
+      "path": "../BoatLib/BoatLib.csproj",
+      "msbuildProject": "../BoatLib/BoatLib.csproj"
+    },
     "Coordinates2D/1.0.0": {
       "type": "project",
       "path": "../Coordinates2D/Coordinates2D.csproj",
@@ -70,15 +76,11 @@
       "type": "project",
       "path": "../Randomer/Randomer.csproj",
       "msbuildProject": "../Randomer/Randomer.csproj"
-    },
-    "TypeBoat/1.0.0": {
-      "type": "project",
-      "path": "../TypeBoat/TypeBoat.csproj",
-      "msbuildProject": "../TypeBoat/TypeBoat.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BoatLib >= 1.0.0",
       "Field >= 1.0.0",
       "Randomer >= 1.0.0"
     ]
@@ -110,6 +112,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+            },
             "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
               "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
             },

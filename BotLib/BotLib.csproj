@@ -9,11 +9,14 @@
   <ItemGroup>
     <ProjectReference Include="..\AdderBoat\AdderBoat.csproj" />
     <ProjectReference Include="..\AttackerBoat\AttackerBoat.csproj" />
-    <ProjectReference Include="..\Builders\Builders.csproj" />
+    <ProjectReference Include="..\BoatLib\BoatLib.csproj" />
+    <ProjectReference Include="..\BuilderBoatData\BuilderBoatData.csproj" />
+    <ProjectReference Include="..\BuildersBoat\BuildersBoat.csproj" />
+    <ProjectReference Include="..\BuildersField\BuildersField.csproj" />
+    <ProjectReference Include="..\BuilderUse\BuilderUse.csproj" />
     <ProjectReference Include="..\Coordinates2D\Coordinates2D.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
     <ProjectReference Include="..\Randomer\Randomer.csproj" />
-    <ProjectReference Include="..\TypeBoat\TypeBoat.csproj" />
   </ItemGroup>
 
 </Project>

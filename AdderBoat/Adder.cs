@@ -1,6 +1,11 @@
 ﻿using Field;
 using System.Numerics;
-using TypeBoat;
+using BoatLib;
+using BuilderBoatData;
+using BuildersBoat;
+using BuilderUse;
+using Randomer;
+using static Randomer.Randomer;
 
 namespace AdderBoat
 {
@@ -52,6 +57,30 @@ namespace AdderBoat
 
             mainField.boats.AddRange(boats);
             mainField.updateFieldWithBoats();
+            return true;
+        }
+        public bool addBoat()
+        {
+            foreach (BuilderUsage<IBuilderBoat> builderUsage in BuilderData.builders)
+            {
+                for (int i = builderUsage.UsageCount; i > 0; --i)
+                {
+                    int attemptsAdd = 0;
+                    bool successfulAdd = false;
+                    while (attemptsAdd <= 10 && successfulAdd == false)
+                    {
+                        builderUsage.Builder.reset
+                            (
+                            randomCoordinates(mainField),
+                            randomDirectionAddition()
+                            );
+
+                        successfulAdd = addBoat(builderUsage.Builder.getResult());
+                        attemptsAdd++;
+                    }
+                }
+            }
+
             return true;
         }
 

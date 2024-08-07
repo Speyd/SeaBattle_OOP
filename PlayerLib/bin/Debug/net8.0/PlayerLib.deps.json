@@ -10,7 +10,8 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "AttackerBoat": "1.0.0",
-          "Builders": "1.0.0"
+          "BoatLib": "1.0.0",
+          "BuildersField": "1.0.0"
         },
         "runtime": {
           "PlayerLib.dll": {}
@@ -18,8 +19,12 @@
       },
       "AdderBoat/1.0.0": {
         "dependencies": {
+          "BoatLib": "1.0.0",
+          "BuilderBoatData": "1.0.0",
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0",
           "Field": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "Randomer": "1.0.0"
         },
         "runtime": {
           "AdderBoat.dll": {}
@@ -27,19 +32,52 @@
       },
       "AttackerBoat/1.0.0": {
         "dependencies": {
-          "Field": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Field": "1.0.0",
+          "Randomer": "1.0.0"
         },
         "runtime": {
           "AttackerBoat.dll": {}
         }
       },
-      "Builders/1.0.0": {
+      "BoatLib/1.0.0": {
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "Coordinates2D": "1.0.0"
         },
         "runtime": {
-          "Builders.dll": {}
+          "BoatLib.dll": {}
+        }
+      },
+      "BuilderBoatData/1.0.0": {
+        "dependencies": {
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0"
+        },
+        "runtime": {
+          "BuilderBoatData.dll": {}
+        }
+      },
+      "BuildersBoat/1.0.0": {
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "runtime": {
+          "BuildersBoat.dll": {}
+        }
+      },
+      "BuildersField/1.0.0": {
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "runtime": {
+          "BuildersField.dll": {}
+        }
+      },
+      "BuilderUse/1.0.0": {
+        "runtime": {
+          "BuilderUse.dll": {}
         }
       },
       "Coordinates2D/1.0.0": {
@@ -49,19 +87,21 @@
       },
       "Field/1.0.0": {
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
         },
         "runtime": {
           "Field.dll": {}
         }
       },
-      "TypeBoat/1.0.0": {
+      "Randomer/1.0.0": {
         "dependencies": {
-          "Coordinates2D": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0",
+          "Field": "1.0.0"
         },
         "runtime": {
-          "TypeBoat.dll": {}
+          "Randomer.dll": {}
         }
       }
     }
@@ -82,7 +122,27 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Builders/1.0.0": {
+    "BoatLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuilderBoatData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildersBoat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildersField/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuilderUse/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -97,7 +157,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "TypeBoat/1.0.0": {
+    "Randomer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -9,10 +9,10 @@ D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.dll
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\refint\Field.dll
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.pdb
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\ref\Field.dll
-D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.dll
-D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\TypeBoat.pdb
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.AssemblyReference.cache
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.csproj.Up2Date
 D:\C++ проекты\SeaBattle_C#\Field\obj\Debug\net8.0\Field.sourcelink.json
 D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\Coordinates2D.dll
 D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\Coordinates2D.pdb
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\BoatLib.dll
+D:\C++ проекты\SeaBattle_C#\Field\bin\Debug\net8.0\BoatLib.pdb

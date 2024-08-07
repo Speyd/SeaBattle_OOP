@@ -6,8 +6,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BoatLib": "1.0.0",
+          "BuilderBoatData": "1.0.0",
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0",
           "Field": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "Randomer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AdderBoat.dll": {}
@@ -20,6 +24,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BoatLib": "1.0.0",
           "Field": "1.0.0",
           "Randomer": "1.0.0"
         },
@@ -30,18 +35,70 @@
           "bin/placeholder/AttackerBoat.dll": {}
         }
       },
-      "Builders/1.0.0": {
+      "BoatLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "Coordinates2D": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Builders.dll": {}
+          "bin/placeholder/BoatLib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Builders.dll": {}
+          "bin/placeholder/BoatLib.dll": {}
+        }
+      },
+      "BuilderBoatData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuilderBoatData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuilderBoatData.dll": {}
+        }
+      },
+      "BuildersBoat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        }
+      },
+      "BuildersField/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "BoatLib": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildersField.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildersField.dll": {}
+        }
+      },
+      "BuilderUse/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BuilderUse.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuilderUse.dll": {}
         }
       },
       "Coordinates2D/1.0.0": {
@@ -58,8 +115,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Coordinates2D": "1.0.0",
-          "TypeBoat": "1.0.0"
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Field.dll": {}
@@ -72,6 +129,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BoatLib": "1.0.0",
           "Coordinates2D": "1.0.0",
           "Field": "1.0.0"
         },
@@ -80,19 +138,6 @@
         },
         "runtime": {
           "bin/placeholder/Randomer.dll": {}
-        }
-      },
-      "TypeBoat/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Coordinates2D": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TypeBoat.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TypeBoat.dll": {}
         }
       }
     }
@@ -108,10 +153,30 @@
       "path": "../AttackerBoat/AttackerBoat.csproj",
       "msbuildProject": "../AttackerBoat/AttackerBoat.csproj"
     },
-    "Builders/1.0.0": {
+    "BoatLib/1.0.0": {
       "type": "project",
-      "path": "../Builders/Builders.csproj",
-      "msbuildProject": "../Builders/Builders.csproj"
+      "path": "../BoatLib/BoatLib.csproj",
+      "msbuildProject": "../BoatLib/BoatLib.csproj"
+    },
+    "BuilderBoatData/1.0.0": {
+      "type": "project",
+      "path": "../BuilderBoatData/BuilderBoatData.csproj",
+      "msbuildProject": "../BuilderBoatData/BuilderBoatData.csproj"
+    },
+    "BuildersBoat/1.0.0": {
+      "type": "project",
+      "path": "../BuildersBoat/BuildersBoat.csproj",
+      "msbuildProject": "../BuildersBoat/BuildersBoat.csproj"
+    },
+    "BuildersField/1.0.0": {
+      "type": "project",
+      "path": "../BuildersField/BuildersField.csproj",
+      "msbuildProject": "../BuildersField/BuildersField.csproj"
+    },
+    "BuilderUse/1.0.0": {
+      "type": "project",
+      "path": "../BuilderUse/BuilderUse.csproj",
+      "msbuildProject": "../BuilderUse/BuilderUse.csproj"
     },
     "Coordinates2D/1.0.0": {
       "type": "project",
@@ -127,18 +192,14 @@
       "type": "project",
       "path": "../Randomer/Randomer.csproj",
       "msbuildProject": "../Randomer/Randomer.csproj"
-    },
-    "TypeBoat/1.0.0": {
-      "type": "project",
-      "path": "../TypeBoat/TypeBoat.csproj",
-      "msbuildProject": "../TypeBoat/TypeBoat.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AdderBoat >= 1.0.0",
       "AttackerBoat >= 1.0.0",
-      "Builders >= 1.0.0"
+      "BoatLib >= 1.0.0",
+      "BuildersField >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -174,8 +235,11 @@
             "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj": {
               "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj"
             },
-            "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj": {
-              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Builders\\Builders.csproj"
+            "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BoatLib\\BoatLib.csproj"
+            },
+            "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj"
             }
           }
         }

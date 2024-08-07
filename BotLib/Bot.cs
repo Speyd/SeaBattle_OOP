@@ -1,24 +1,19 @@
 ﻿using Field;
 using Randomer;
-using TypeBoat;
-using Builders;
+using BoatLib;
+using BuildersBoat;
 using AdderBoat;
 using AttackerBoat;
 using Coordinates2D;
+using BuilderUse;
+using BuildersField;
+using BuilderBoatData;
 using static Randomer.Randomer;
 
 namespace BotLib
 {
     public class Bot
     {
-
-        private static BuilderUsage[] builders =
-        {
-            new BuilderUsage ( new BattleshipBuilder(), 1 ),
-            new BuilderUsage ( new CruiserBuilder(), 2 ),
-            new BuilderUsage ( new DestroyerBuilder(), 3 ),
-            new BuilderUsage ( new ShipBuilder(), 4 )
-        };
         private static AttackerBot attacker = new AttackerBot();
 
         private List<Coordinates> lastAttack = new List<Coordinates>();
@@ -28,65 +23,55 @@ namespace BotLib
 
 
         #region Constructor
+
+        public Bot(IBuilderField builderField)
+        {
+            builderField.reset();
+            this.field = builderField.getResult() ?? new MainField(6, 6);
+
+            adder = new Adder(field);
+        }
         public Bot(MainField field)
         {
             this.field = field;
             adder = new Adder(field);
 
-            fillFieldWithBoad();
+            adder.addBoat();
         }
         public Bot(int line, int column, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X')
         {
             field = new MainField(line, column, emptyCell, missCell, shipDefeat);
             adder = new Adder(field);
 
-            fillFieldWithBoad();
+            adder.addBoat();
         }
         #endregion
-        public void fillFieldWithBoad()
-        {
-            foreach (BuilderUsage builderUsage in builders)
-            {
-                for (; builderUsage.UsageCount > 0;)
-                {
-                    int attemptsAdd = 0;
-                    bool useful = false;
-                    while (attemptsAdd <= 3 && useful == false)
-                    {
-                        builderUsage.Builder.reset
-                            (
-                            randomCoordinates(field),
-                            randomDirectionAddition()        
-                            );
-
-                        useful = adder.addBoat(builderUsage.Builder.getResult());
-                        attemptsAdd++;
-                    }
-                    builderUsage.UsageCount--;
-                }
-            }
-        }
 
         #region Attack
         private void eventSuccessAttack(MainField mainField, ref Coordinates attackCoordinates)
         {
             Score++;
 
-            int indexBoat = mainField.findIndexBoat(attackCoordinates);
-            if (indexBoat != -1)
+            Boat? boat = mainField.findBoat(attackCoordinates);
+            if (boat is not null)
             {
-                int amountDefendPart = 0;
-                for (int i = 0; i < mainField.boats[indexBoat].Size; i++)
-                {
-                    if (mainField.boats[indexBoat].getSymbol(i) == mainField.fieldInfo.ShipDefeat)
-                        amountDefendPart++;
-                }
-
-                if (amountDefendPart == mainField.boats[indexBoat].Size)
+                if (boat.Condition == ShipCondition.DESTROYED)
                     lastAttack.Clear();
                 else
                     lastAttack.Add(attackCoordinates);
             }
+        }
+        private void eventMissAttack(MainField mainField)
+        {
+            DirectionAddition currentDirection = attacker.DeterminingDirectionOfMultiShip(ref lastAttack);
+
+            Coordinates initialCoordinates = lastAttack[0];
+            lastAttack.Add(initialCoordinates);
+
+            for (int i = 0; i < mainField.fieldInfo.Column; i++)
+                Boat.directionDetermination(currentDirection)(ref initialCoordinates);
+
+            lastAttack.Insert(0, initialCoordinates);
         }
         public void attack(MainField mainField)
         {
@@ -95,16 +80,17 @@ namespace BotLib
             if (lastAttack.Count >= 2)
                 attacker.findCoordinatesMultiShips(ref attackCoordinates, ref lastAttack);
             else
-                attacker.findCoordinatesShip(mainField, ref attackCoordinates);
+                attacker.findCoordinatesShip(mainField, ref attackCoordinates, ref lastAttack);
 
 
             if (attacker.attack(mainField, attackCoordinates) == CheckingResult.SUCCESS)
                 eventSuccessAttack(mainField, ref attackCoordinates);
-            else
-                lastAttack.Clear();
+            else if (lastAttack.Count >= 2)
+                eventMissAttack(mainField);
         }
         #endregion
 
+        public MainField getMainField() => field;
         public void printField()
         {
             field.printField();

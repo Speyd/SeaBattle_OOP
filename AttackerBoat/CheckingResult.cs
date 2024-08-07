@@ -8,6 +8,7 @@ namespace AttackerBoat
 {
     public enum CheckingResult
     {
+        ERROR,
         SUCCESS,
         NO_SUCCESS,
         MISS,

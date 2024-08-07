@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Randomer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0fd112606c72c03974c087f9477403f97200eec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+803219836605c194c74f20852a18bcb0e2f8fa99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Randomer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Randomer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
