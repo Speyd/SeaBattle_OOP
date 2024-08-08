@@ -1,0 +1,12 @@
+D:\C++ проекты\SeaBattle_C#\MenuLib\bin\Debug\net8.0\MenuLib.deps.json
+D:\C++ проекты\SeaBattle_C#\MenuLib\bin\Debug\net8.0\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\MenuLib\bin\Debug\net8.0\MenuLib.pdb
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\refint\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\MenuLib.pdb
+D:\C++ проекты\SeaBattle_C#\MenuLib\obj\Debug\net8.0\ref\MenuLib.dll

@@ -16,6 +16,7 @@
     <ProjectReference Include="..\BuildersField\BuildersField.csproj" />
     <ProjectReference Include="..\Coordinates2D\Coordinates2D.csproj" />
     <ProjectReference Include="..\DirectorBuildersBoat\DirectorBuildersBoat.csproj" />
+    <ProjectReference Include="..\FieldCreator\FieldCreator.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
     <ProjectReference Include="..\PlayerLib\PlayerLib.csproj" />
   </ItemGroup>

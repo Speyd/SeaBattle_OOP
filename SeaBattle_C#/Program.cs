@@ -5,6 +5,7 @@ using BuildersBoat;
 using AdderBoat;
 using PlayerLib;
 using AttackerBoat;
+using FieldCreator;
 using Coordinates2D;
 using BuildersField;
 using System.Numerics;
@@ -66,17 +67,25 @@ try
     ///
 
 
-    Player player = new Player(1, 1);
-    player.addBoat(1, new Coordinates(0, 0), DirectionAddition.LEFT, 'C');
-    Bot bot = new Bot(new LargeFieldBuilder());
+    //Player player = new Player(1, 1);
+    //player.addBoat(1, new Coordinates(0, 0), DirectionAddition.LEFT, 'C');
+    //Bot bot = new Bot(new LargeFieldBuilder());
 
-    player.printField();
-    bot.attack(player.getMainField());
-    player.printField();
+    //player.printField();
+    //bot.attack(player.getMainField());
+    //player.printField();
+
+    MainField mainField = new MainField(2, 3);
+    mainField.printField();
+    Console.ReadLine();
+    Creator creator = new Creator();
+    creator.creat(ref mainField);
+
+    mainField.printField();
 
 
     //Console.WriteLine("");
-   // Console.WriteLine("");
+    // Console.WriteLine("");
 
     //bot.printField();
     //player.attack(bot.getMainField(), new Coordinates(1, 2));

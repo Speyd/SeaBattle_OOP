@@ -16,6 +16,7 @@
           "Coordinates2D": "1.0.0",
           "DirectorBuildersBoat": "1.0.0",
           "Field": "1.0.0",
+          "FieldCreator": "1.0.0",
           "PlayerLib": "1.0.0"
         },
         "runtime": {
@@ -117,6 +118,15 @@
           "DirectorBuildersBoat.dll": {}
         }
       },
+      "DirectorBuildersField/1.0.0": {
+        "dependencies": {
+          "BuildersField": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "runtime": {
+          "DirectorBuildersField.dll": {}
+        }
+      },
       "Field/1.0.0": {
         "dependencies": {
           "BoatLib": "1.0.0",
@@ -124,6 +134,22 @@
         },
         "runtime": {
           "Field.dll": {}
+        }
+      },
+      "FieldCreator/1.0.0": {
+        "dependencies": {
+          "BuildersField": "1.0.0",
+          "DirectorBuildersField": "1.0.0",
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
+        },
+        "runtime": {
+          "FieldCreator.dll": {}
+        }
+      },
+      "MenuLib/1.0.0": {
+        "runtime": {
+          "MenuLib.dll": {}
         }
       },
       "PlayerLib/1.0.0": {
@@ -205,7 +231,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DirectorBuildersField/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Field/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FieldCreator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MenuLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

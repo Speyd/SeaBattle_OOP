@@ -19,17 +19,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotLib", "BotLib\BotLib.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomer", "Randomer\Randomer.csproj", "{658E401A-B9C2-4B23-8F41-04D7BC886510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildersBoat", "BuildersBoat\BuildersBoat.csproj", "{2BA2E9FD-BB36-41D0-B507-1FDC44F445AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildersBoat", "BuildersBoat\BuildersBoat.csproj", "{2BA2E9FD-BB36-41D0-B507-1FDC44F445AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectorBuildersBoat", "DirectorBuildersBoat\DirectorBuildersBoat.csproj", "{36ABCBCD-B18A-49AA-9B61-16CF8E8C9663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectorBuildersBoat", "DirectorBuildersBoat\DirectorBuildersBoat.csproj", "{36ABCBCD-B18A-49AA-9B61-16CF8E8C9663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildersField", "BuildersField\BuildersField.csproj", "{E42B133A-F7F6-4716-A12B-DBDB1CCB42FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildersField", "BuildersField\BuildersField.csproj", "{E42B133A-F7F6-4716-A12B-DBDB1CCB42FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderUse", "BuilderUse\BuilderUse.csproj", "{20615F18-D8D3-4395-BBA1-1CBC623A0BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderUse", "BuilderUse\BuilderUse.csproj", "{20615F18-D8D3-4395-BBA1-1CBC623A0BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderBoatData", "BuilderBoatData\BuilderBoatData.csproj", "{4B56759A-A739-4C1A-B699-9C98FFAAE323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderBoatData", "BuilderBoatData\BuilderBoatData.csproj", "{4B56759A-A739-4C1A-B699-9C98FFAAE323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoatLib", "BoatLib\BoatLib.csproj", "{B3F4B0D2-DD91-45A1-947E-741848FC8F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoatLib", "BoatLib\BoatLib.csproj", "{B3F4B0D2-DD91-45A1-947E-741848FC8F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldCreator", "FieldCreator\FieldCreator.csproj", "{66779C8A-99A1-4896-BA80-55CEF1A49D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuLib", "MenuLib\MenuLib.csproj", "{373F038B-B810-456A-B91D-37860BEE6A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectorBuildersField", "DirectorBuildersField\DirectorBuildersField.csproj", "{9D59C8D7-636E-401A-9732-C60C2F6911C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +99,18 @@ Global
 		{B3F4B0D2-DD91-45A1-947E-741848FC8F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3F4B0D2-DD91-45A1-947E-741848FC8F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3F4B0D2-DD91-45A1-947E-741848FC8F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66779C8A-99A1-4896-BA80-55CEF1A49D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66779C8A-99A1-4896-BA80-55CEF1A49D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66779C8A-99A1-4896-BA80-55CEF1A49D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66779C8A-99A1-4896-BA80-55CEF1A49D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373F038B-B810-456A-B91D-37860BEE6A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373F038B-B810-456A-B91D-37860BEE6A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373F038B-B810-456A-B91D-37860BEE6A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373F038B-B810-456A-B91D-37860BEE6A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D59C8D7-636E-401A-9732-C60C2F6911C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D59C8D7-636E-401A-9732-C60C2F6911C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D59C8D7-636E-401A-9732-C60C2F6911C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D59C8D7-636E-401A-9732-C60C2F6911C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

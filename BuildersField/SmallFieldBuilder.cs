@@ -13,13 +13,17 @@ namespace BuildersField
     {
 
         private MainField? field = null;
+
+        public static readonly int Height = 6;
+        public static readonly int Width = 8;
+
         public void reset(
             bool addBoat = true,
             char _emptyCell = IBuilderField.emptyCell,
             char _missCell = IBuilderField.missCell,
             char _shipDefeat = IBuilderField.shipDefeat)
         {
-            field = new MainField(6, 6, _emptyCell, _missCell, _shipDefeat);
+            field = new MainField(Height, Width, _emptyCell, _missCell, _shipDefeat);
             Adder adder = new Adder(field);
 
             if (addBoat)

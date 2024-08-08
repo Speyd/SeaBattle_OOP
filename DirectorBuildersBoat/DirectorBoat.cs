@@ -5,7 +5,7 @@ using BoatLib;
 
 namespace DirectorBuildersBoat
 {
-    public class Director(IBuilderBoat? builder)
+    public class DirectorBoat(IBuilderBoat? builder)
     {
         public void setBuilder(IBuilderBoat _builder) => builder = _builder;
 

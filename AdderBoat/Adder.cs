@@ -11,7 +11,7 @@ namespace AdderBoat
 {
     public class Adder(MainField mainField)
     {
-        private bool checkerFreePlace(Boat boat)
+        public bool checkerFreePlace(Boat boat)
         {
             int emptyCellCounter = 0;
             foreach(PartBoat partBoat in boat.getPartBoats())
