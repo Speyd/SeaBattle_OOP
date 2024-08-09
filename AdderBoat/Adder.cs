@@ -28,11 +28,13 @@ namespace AdderBoat
             return emptyCellCounter == boat.Size ? true : false;
         }
 
-        public bool addBoat(Boat? boat)
+        public bool addBoat(Boat? boat, bool ignoreWarning = false)
         {
             if (boat is null || checkerFreePlace(boat) == false)
             {
-                Console.WriteLine("Add Error!");
+                if(ignoreWarning == false)
+                    Console.WriteLine("Add Error!");
+
                 return false;
             }
 
@@ -75,7 +77,7 @@ namespace AdderBoat
                             randomDirectionAddition()
                             );
 
-                        successfulAdd = addBoat(builderUsage.Builder.getResult());
+                        successfulAdd = addBoat(builderUsage.Builder.getResult(), true);
                         attemptsAdd++;
                     }
                 }

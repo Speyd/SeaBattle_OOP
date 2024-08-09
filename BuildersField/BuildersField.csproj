@@ -10,6 +10,7 @@
     <ProjectReference Include="..\AdderBoat\AdderBoat.csproj" />
     <ProjectReference Include="..\BoatLib\BoatLib.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
+    <ProjectReference Include="..\MenuLib\MenuLib.csproj" />
   </ItemGroup>
 
 </Project>

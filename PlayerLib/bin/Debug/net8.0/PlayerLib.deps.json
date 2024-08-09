@@ -11,7 +11,8 @@
           "AdderBoat": "1.0.0",
           "AttackerBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "BuildersField": "1.0.0"
+          "BuildersField": "1.0.0",
+          "EntityLib": "1.0.0"
         },
         "runtime": {
           "PlayerLib.dll": {}
@@ -86,6 +87,17 @@
           "Coordinates2D.dll": {}
         }
       },
+      "EntityLib/1.0.0": {
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "AttackerBoat": "1.0.0",
+          "BuildersField": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "runtime": {
+          "EntityLib.dll": {}
+        }
+      },
       "Field/1.0.0": {
         "dependencies": {
           "BoatLib": "1.0.0",
@@ -149,6 +161,11 @@
       "sha512": ""
     },
     "Coordinates2D/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,45 +6,31 @@ using System.Numerics;
 using System.Drawing;
 using Coordinates2D;
 using BuildersField;
+using EntityLib;
 
 namespace PlayerLib
 {
-    public class Player
+    public class Player : Entity
     {
-        private static Attacker attacker = new Attacker();
-
-        private MainField field;
-        private Adder adder;
-        public int Score { get; set; } = 0;
-
+        protected static Attacker attacker = new Attacker();
 
         #region Constructor
 
-        public Player(IBuilderField builder, bool addBoat)
-        {
-            builder.reset(addBoat);
-            field = builder.getResult() ?? new MainField(6, 6);
+        public Player(IBuilderField builder, bool addBoat = false) 
+            : base(builder, addBoat)
+        { }
+        public Player(MainField field, bool addBoat = false) 
+            :base(field, addBoat)
+        { }
 
-            adder = new Adder(field);
-        }
-        public Player(MainField field, Boat[]? boats = null)
-        {
-            this.field = field;
-
-            adder = new Adder(field);
-            if(boats is not null)
-                adder.addBoat(boats);
-        }
-
-        public Player(int line, int column, Boat[]? boats = null,
-                     char emptyCell = '.', char missCell = '0', char shipDefeat = 'X')
-        {
-            field = new MainField(line, column, emptyCell, missCell, shipDefeat);
-
-            adder = new Adder(field);
-            if (boats is not null)
-                adder.addBoat(boats);
-        }
+        public Player(
+            int line, int column,
+            bool addBoat = false,
+            char emptyCell = '.', 
+            char missCell = '0',
+            char shipDefeat = 'X')
+            :base(line, column, addBoat, emptyCell, missCell, shipDefeat)
+        {}
         #endregion
 
         #region AddBoat
@@ -62,17 +48,15 @@ namespace PlayerLib
         }
         #endregion
 
-        #region Attack
         public void attack(MainField targetField, Coordinates coordinates)
         {
             if (attacker.attack(targetField, coordinates) == CheckingResult.SUCCESS)
                 Score++;
         }
-        #endregion
 
-        public MainField getMainField() => field;
+        public override ref MainField getMainField() => ref field;
 
-        public void printField()
+        public override void printField()
         {
             field.printField();
         }

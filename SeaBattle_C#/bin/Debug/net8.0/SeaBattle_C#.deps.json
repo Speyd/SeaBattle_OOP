@@ -17,6 +17,7 @@
           "DirectorBuildersBoat": "1.0.0",
           "Field": "1.0.0",
           "FieldCreator": "1.0.0",
+          "MainMenu": "1.0.0",
           "PlayerLib": "1.0.0"
         },
         "runtime": {
@@ -64,6 +65,7 @@
           "BuildersBoat": "1.0.0",
           "BuildersField": "1.0.0",
           "Coordinates2D": "1.0.0",
+          "EntityLib": "1.0.0",
           "Field": "1.0.0",
           "Randomer": "1.0.0"
         },
@@ -127,6 +129,17 @@
           "DirectorBuildersField.dll": {}
         }
       },
+      "EntityLib/1.0.0": {
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "AttackerBoat": "1.0.0",
+          "BuildersField": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "runtime": {
+          "EntityLib.dll": {}
+        }
+      },
       "Field/1.0.0": {
         "dependencies": {
           "BoatLib": "1.0.0",
@@ -147,6 +160,17 @@
           "FieldCreator.dll": {}
         }
       },
+      "MainMenu/1.0.0": {
+        "dependencies": {
+          "BotLib": "1.0.0",
+          "EntityLib": "1.0.0",
+          "FieldCreator": "1.0.0",
+          "PlayerLib": "1.0.0"
+        },
+        "runtime": {
+          "MainMenu.dll": {}
+        }
+      },
       "MenuLib/1.0.0": {
         "runtime": {
           "MenuLib.dll": {}
@@ -157,7 +181,8 @@
           "AdderBoat": "1.0.0",
           "AttackerBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "BuildersField": "1.0.0"
+          "BuildersField": "1.0.0",
+          "EntityLib": "1.0.0"
         },
         "runtime": {
           "PlayerLib.dll": {}
@@ -236,12 +261,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "EntityLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Field/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "FieldCreator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MainMenu/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,43 +8,28 @@ using Coordinates2D;
 using BuilderUse;
 using BuildersField;
 using BuilderBoatData;
+using EntityLib;
 using static Randomer.Randomer;
 
 namespace BotLib
 {
-    public class Bot
+    public class Bot : Entity
     {
-        private static AttackerBot attacker = new AttackerBot();
-
+        protected static AttackerBot attacker = new AttackerBot();
         private List<Coordinates> lastAttack = new List<Coordinates>();
-        private MainField field;
-        private Adder adder;
-        public int Score { get; set; } = 0;
 
 
         #region Constructor
 
-        public Bot(IBuilderField builderField)
-        {
-            builderField.reset();
-            this.field = builderField.getResult() ?? new MainField(6, 6);
-
-            adder = new Adder(field);
-        }
-        public Bot(MainField field)
-        {
-            this.field = field;
-            adder = new Adder(field);
-
-            adder.addBoat();
-        }
-        public Bot(int line, int column, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X')
-        {
-            field = new MainField(line, column, emptyCell, missCell, shipDefeat);
-            adder = new Adder(field);
-
-            adder.addBoat();
-        }
+        public Bot(IBuilderField builderField) 
+            :base(builderField, true)
+        { }
+        public Bot(MainField field) 
+            :base(field, true)
+        { }
+        public Bot(int line, int column, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X') 
+            :base(line, column, true, emptyCell, missCell, shipDefeat)
+        { }
         #endregion
 
         #region Attack
@@ -90,8 +75,8 @@ namespace BotLib
         }
         #endregion
 
-        public MainField getMainField() => field;
-        public void printField()
+        public override ref MainField getMainField() => ref field;
+        public override void printField()
         {
             field.printField();
         }

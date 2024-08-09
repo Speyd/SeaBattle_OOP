@@ -11,6 +11,7 @@
     <ProjectReference Include="..\AttackerBoat\AttackerBoat.csproj" />
     <ProjectReference Include="..\BoatLib\BoatLib.csproj" />
     <ProjectReference Include="..\BuildersField\BuildersField.csproj" />
+    <ProjectReference Include="..\EntityLib\EntityLib.csproj" />
   </ItemGroup>
 
 </Project>

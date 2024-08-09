@@ -10,7 +10,7 @@ using Coordinates2D;
 using BuildersField;
 using System.Numerics;
 using DirectorBuildersBoat;
-
+using MainMenu;
 try
 {
 
@@ -75,13 +75,13 @@ try
     //bot.attack(player.getMainField());
     //player.printField();
 
-    MainField mainField = new MainField(2, 3);
-    mainField.printField();
-    Console.ReadLine();
-    Creator creator = new Creator();
-    creator.creat(ref mainField);
+    //MainField mainField = new MainField(2, 3);
+    //mainField.printField();
+    //Console.ReadLine();
+    //Creator creator = new Creator();
+    //creator.creat(ref mainField);
 
-    mainField.printField();
+    //mainField.printField();
 
 
     //Console.WriteLine("");
@@ -90,7 +90,8 @@ try
     //bot.printField();
     //player.attack(bot.getMainField(), new Coordinates(1, 2));
     //bot.printField();
-
+    Main_Menu mainMenu = new Main_Menu();
+    mainMenu.start();
 }
 catch (Exception e)
 {

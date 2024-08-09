@@ -14,34 +14,7 @@ namespace FieldCreator
 {
     public class Creator
     {
-        private List<ItemMenu<IBuilderField>> getBuilderFieldList()
-        {
-            List<ItemMenu<IBuilderField>> builders = new List<ItemMenu<IBuilderField>>();
-
-            builders.Add
-                (
-                new ItemMenu<IBuilderField>
-                ($"Small field(Height: {SmallFieldBuilder.Height} | Width: {SmallFieldBuilder.Width})",
-                new SmallFieldBuilder())
-                );
-
-            builders.Add
-                (
-                new ItemMenu<IBuilderField>
-                ($"Medium field(Height: {MediumFieldBuilder.Height} | Width: {MediumFieldBuilder.Width})",
-                new MediumFieldBuilder())
-                );
-
-            builders.Add
-                (
-                new ItemMenu<IBuilderField>
-                ($"Large field(Height: {LargeFieldBuilder.Height} | Width: {LargeFieldBuilder.Width})",
-                new LargeFieldBuilder())
-                );
-
-            return builders;
-        }
-
+   
         #region Selection
         private DirectionAddition selectionDirectionAddition()
         {
@@ -178,20 +151,21 @@ namespace FieldCreator
 
 
         }
-        private void creatField(ref MainField mainField)
+        private void creatField(ref MainField mainField, IBuilderField builder, bool addAutomatBoats = true)
         {
-            Menu<IBuilderField> menu = new Menu<IBuilderField>("What field do you want to form?", getBuilderFieldList());
-            DirectorField director = new DirectorField(menu[menu.setChoicePlayer()]);
+            DirectorField director = new DirectorField(builder);
 
-            bool addAutomatBoats = doubleChoices("Add ships automatically?");
+            if(addAutomatBoats == false)
+                addAutomatBoats = doubleChoices("Add ships automatically?");
+
             mainField = director.creatField(addAutomatBoats) ?? throw new Exception("Null director.creatField()");
 
             if (addAutomatBoats == false)
                 addBoats(ref mainField);
         }
-        public void creat(ref MainField mainField)
+        public void creat(ref MainField mainField, IBuilderField builder, bool addAutomatBoats = true)
         {
-            creatField(ref mainField);
+            creatField(ref mainField, builder, addAutomatBoats);
         }
 
     }

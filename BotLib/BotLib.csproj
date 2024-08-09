@@ -15,6 +15,7 @@
     <ProjectReference Include="..\BuildersField\BuildersField.csproj" />
     <ProjectReference Include="..\BuilderUse\BuilderUse.csproj" />
     <ProjectReference Include="..\Coordinates2D\Coordinates2D.csproj" />
+    <ProjectReference Include="..\EntityLib\EntityLib.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
     <ProjectReference Include="..\Randomer\Randomer.csproj" />
   </ItemGroup>

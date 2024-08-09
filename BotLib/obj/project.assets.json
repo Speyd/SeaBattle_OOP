@@ -82,7 +82,8 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "Field": "1.0.0"
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BuildersField.dll": {}
@@ -111,6 +112,22 @@
           "bin/placeholder/Coordinates2D.dll": {}
         }
       },
+      "EntityLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "AttackerBoat": "1.0.0",
+          "BuildersField": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntityLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLib.dll": {}
+        }
+      },
       "Field/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -123,6 +140,16 @@
         },
         "runtime": {
           "bin/placeholder/Field.dll": {}
+        }
+      },
+      "MenuLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MenuLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MenuLib.dll": {}
         }
       },
       "Randomer/1.0.0": {
@@ -183,10 +210,20 @@
       "path": "../Coordinates2D/Coordinates2D.csproj",
       "msbuildProject": "../Coordinates2D/Coordinates2D.csproj"
     },
+    "EntityLib/1.0.0": {
+      "type": "project",
+      "path": "../EntityLib/EntityLib.csproj",
+      "msbuildProject": "../EntityLib/EntityLib.csproj"
+    },
     "Field/1.0.0": {
       "type": "project",
       "path": "../Field/Field.csproj",
       "msbuildProject": "../Field/Field.csproj"
+    },
+    "MenuLib/1.0.0": {
+      "type": "project",
+      "path": "../MenuLib/MenuLib.csproj",
+      "msbuildProject": "../MenuLib/MenuLib.csproj"
     },
     "Randomer/1.0.0": {
       "type": "project",
@@ -204,6 +241,7 @@
       "BuildersBoat >= 1.0.0",
       "BuildersField >= 1.0.0",
       "Coordinates2D >= 1.0.0",
+      "EntityLib >= 1.0.0",
       "Field >= 1.0.0",
       "Randomer >= 1.0.0"
     ]
@@ -258,6 +296,9 @@
             },
             "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
               "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
+            },
+            "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
             },
             "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
               "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"

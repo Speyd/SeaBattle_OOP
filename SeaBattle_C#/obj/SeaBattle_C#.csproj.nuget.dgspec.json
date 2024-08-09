@@ -265,6 +265,9 @@
               "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Coordinates2D\\Coordinates2D.csproj"
               },
+              "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
               },
@@ -474,6 +477,9 @@
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\MenuLib\\MenuLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\MenuLib\\MenuLib.csproj"
               }
             }
           }
@@ -766,6 +772,79 @@
         }
       }
     },
+    "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj",
+        "projectName": "EntityLib",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\AdderBoat\\AdderBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AdderBoat\\AdderBoat.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\AttackerBoat\\AttackerBoat.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\C++ проекты\\SeaBattle_C#\\FieldCreator\\FieldCreator.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -906,6 +985,79 @@
         }
       }
     },
+    "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj",
+        "projectName": "MainMenu",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\BotLib\\BotLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BotLib\\BotLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\FieldCreator\\FieldCreator.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\FieldCreator\\FieldCreator.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\PlayerLib\\PlayerLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\PlayerLib\\PlayerLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\C++ проекты\\SeaBattle_C#\\MenuLib\\MenuLib.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -1001,6 +1153,9 @@
               },
               "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\BuildersField\\BuildersField.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
               }
             }
           }
@@ -1159,6 +1314,9 @@
               },
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj"
               },
               "D:\\C++ проекты\\SeaBattle_C#\\PlayerLib\\PlayerLib.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\PlayerLib\\PlayerLib.csproj"

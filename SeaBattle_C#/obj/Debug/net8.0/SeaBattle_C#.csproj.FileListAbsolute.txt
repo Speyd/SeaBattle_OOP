@@ -47,3 +47,7 @@ D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MenuLib.dll
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\FieldCreator.pdb
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\DirectorBuildersField.pdb
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MenuLib.pdb
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\EntityLib.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MainMenu.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MainMenu.pdb
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\EntityLib.pdb

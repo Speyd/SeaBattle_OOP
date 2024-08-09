@@ -67,7 +67,8 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "Field": "1.0.0"
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BuildersField.dll": {}

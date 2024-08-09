@@ -18,6 +18,7 @@
     <ProjectReference Include="..\DirectorBuildersBoat\DirectorBuildersBoat.csproj" />
     <ProjectReference Include="..\FieldCreator\FieldCreator.csproj" />
     <ProjectReference Include="..\Field\Field.csproj" />
+    <ProjectReference Include="..\MainMenu\MainMenu.csproj" />
     <ProjectReference Include="..\PlayerLib\PlayerLib.csproj" />
   </ItemGroup>
 
