@@ -51,3 +51,9 @@ D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\EntityLib.dll
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MainMenu.dll
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\MainMenu.pdb
 D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\EntityLib.pdb
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\GameAttacker.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\GameStarter.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\SwapLib.dll
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\GameStarter.pdb
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\GameAttacker.pdb
+D:\C++ проекты\SeaBattle_C#\SeaBattle_C#\bin\Debug\net8.0\SwapLib.pdb

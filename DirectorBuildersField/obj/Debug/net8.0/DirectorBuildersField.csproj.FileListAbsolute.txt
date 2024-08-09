@@ -30,3 +30,5 @@ D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\obj\Debug\net8.0\Direct
 D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\obj\Debug\net8.0\refint\DirectorBuildersField.dll
 D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\obj\Debug\net8.0\DirectorBuildersField.pdb
 D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\obj\Debug\net8.0\ref\DirectorBuildersField.dll
+D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\bin\Debug\net8.0\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\DirectorBuildersField\bin\Debug\net8.0\MenuLib.pdb

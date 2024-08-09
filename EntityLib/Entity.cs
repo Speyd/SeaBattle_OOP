@@ -10,8 +10,15 @@ namespace EntityLib
     {
         protected MainField field;
         protected Adder adder;
-        protected int Score { get; set; } = 0;
+        public int Score { get; set; } = 0;
 
+        public Entity(Entity entity)
+        {
+            field = entity.getMainField();
+            adder = new Adder(field);
+
+            Score = entity.Score;
+        }
         public Entity(IBuilderField builderField, bool addBoats = true)
         {
             builderField.reset(addBoats);
@@ -41,6 +48,8 @@ namespace EntityLib
                 adder.addBoat();
         }
 
+        public abstract bool attack(MainField mainField);
+        public abstract int getAmountDefeatBoat();
         public abstract ref MainField getMainField();
         public abstract void printField();
     }

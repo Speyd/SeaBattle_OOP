@@ -1,0 +1,325 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "AdderBoat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "BuilderBoatData": "1.0.0",
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0",
+          "Field": "1.0.0",
+          "Randomer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AdderBoat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AdderBoat.dll": {}
+        }
+      },
+      "AttackerBoat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Field": "1.0.0",
+          "Randomer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AttackerBoat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AttackerBoat.dll": {}
+        }
+      },
+      "BoatLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BoatLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoatLib.dll": {}
+        }
+      },
+      "BuilderBoatData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BuilderUse": "1.0.0",
+          "BuildersBoat": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuilderBoatData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuilderBoatData.dll": {}
+        }
+      },
+      "BuildersBoat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildersBoat.dll": {}
+        }
+      },
+      "BuildersField/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "BoatLib": "1.0.0",
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildersField.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildersField.dll": {}
+        }
+      },
+      "BuilderUse/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BuilderUse.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuilderUse.dll": {}
+        }
+      },
+      "Coordinates2D/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Coordinates2D.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Coordinates2D.dll": {}
+        }
+      },
+      "EntityLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AdderBoat": "1.0.0",
+          "AttackerBoat": "1.0.0",
+          "BuildersField": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntityLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLib.dll": {}
+        }
+      },
+      "Field/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Field.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Field.dll": {}
+        }
+      },
+      "MenuLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MenuLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MenuLib.dll": {}
+        }
+      },
+      "Randomer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BoatLib": "1.0.0",
+          "Coordinates2D": "1.0.0",
+          "Field": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Randomer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Randomer.dll": {}
+        }
+      },
+      "SwapLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SwapLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SwapLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AdderBoat/1.0.0": {
+      "type": "project",
+      "path": "../AdderBoat/AdderBoat.csproj",
+      "msbuildProject": "../AdderBoat/AdderBoat.csproj"
+    },
+    "AttackerBoat/1.0.0": {
+      "type": "project",
+      "path": "../AttackerBoat/AttackerBoat.csproj",
+      "msbuildProject": "../AttackerBoat/AttackerBoat.csproj"
+    },
+    "BoatLib/1.0.0": {
+      "type": "project",
+      "path": "../BoatLib/BoatLib.csproj",
+      "msbuildProject": "../BoatLib/BoatLib.csproj"
+    },
+    "BuilderBoatData/1.0.0": {
+      "type": "project",
+      "path": "../BuilderBoatData/BuilderBoatData.csproj",
+      "msbuildProject": "../BuilderBoatData/BuilderBoatData.csproj"
+    },
+    "BuildersBoat/1.0.0": {
+      "type": "project",
+      "path": "../BuildersBoat/BuildersBoat.csproj",
+      "msbuildProject": "../BuildersBoat/BuildersBoat.csproj"
+    },
+    "BuildersField/1.0.0": {
+      "type": "project",
+      "path": "../BuildersField/BuildersField.csproj",
+      "msbuildProject": "../BuildersField/BuildersField.csproj"
+    },
+    "BuilderUse/1.0.0": {
+      "type": "project",
+      "path": "../BuilderUse/BuilderUse.csproj",
+      "msbuildProject": "../BuilderUse/BuilderUse.csproj"
+    },
+    "Coordinates2D/1.0.0": {
+      "type": "project",
+      "path": "../Coordinates2D/Coordinates2D.csproj",
+      "msbuildProject": "../Coordinates2D/Coordinates2D.csproj"
+    },
+    "EntityLib/1.0.0": {
+      "type": "project",
+      "path": "../EntityLib/EntityLib.csproj",
+      "msbuildProject": "../EntityLib/EntityLib.csproj"
+    },
+    "Field/1.0.0": {
+      "type": "project",
+      "path": "../Field/Field.csproj",
+      "msbuildProject": "../Field/Field.csproj"
+    },
+    "MenuLib/1.0.0": {
+      "type": "project",
+      "path": "../MenuLib/MenuLib.csproj",
+      "msbuildProject": "../MenuLib/MenuLib.csproj"
+    },
+    "Randomer/1.0.0": {
+      "type": "project",
+      "path": "../Randomer/Randomer.csproj",
+      "msbuildProject": "../Randomer/Randomer.csproj"
+    },
+    "SwapLib/1.0.0": {
+      "type": "project",
+      "path": "../SwapLib/SwapLib.csproj",
+      "msbuildProject": "../SwapLib/SwapLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "EntityLib >= 1.0.0",
+      "SwapLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj",
+      "projectName": "GameAttacker",
+      "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
+            },
+            "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj": {
+              "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

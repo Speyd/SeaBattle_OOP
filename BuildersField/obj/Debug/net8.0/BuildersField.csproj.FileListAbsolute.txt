@@ -28,3 +28,5 @@ D:\C++ проекты\SeaBattle_C#\BuildersField\obj\Debug\net8.0\BuildersField.
 D:\C++ проекты\SeaBattle_C#\BuildersField\obj\Debug\net8.0\ref\BuildersField.dll
 D:\C++ проекты\SeaBattle_C#\BuildersField\bin\Debug\net8.0\BoatLib.dll
 D:\C++ проекты\SeaBattle_C#\BuildersField\bin\Debug\net8.0\BoatLib.pdb
+D:\C++ проекты\SeaBattle_C#\BuildersField\bin\Debug\net8.0\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\BuildersField\bin\Debug\net8.0\MenuLib.pdb

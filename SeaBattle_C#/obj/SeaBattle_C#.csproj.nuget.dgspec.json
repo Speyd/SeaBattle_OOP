@@ -985,6 +985,140 @@
         }
       }
     },
+    "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj",
+        "projectName": "GameAttacker",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\EntityLib\\EntityLib.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\GameStarter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\GameStarter.csproj",
+        "projectName": "GameStarter",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\GameStarter.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\GameAttacker\\GameAttacker.csproj"
+              },
+              "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -1315,6 +1449,9 @@
               "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\Field\\Field.csproj"
               },
+              "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\GameStarter.csproj": {
+                "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\GameStarter\\GameStarter.csproj"
+              },
               "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj": {
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\MainMenu\\MainMenu.csproj"
               },
@@ -1322,6 +1459,66 @@
                 "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\PlayerLib\\PlayerLib.csproj"
               }
             }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj",
+        "projectName": "SwapLib",
+        "projectPath": "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\SwapLib.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C++ проекты\\SeaBattle_C#\\SwapLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
           }
         },
         "warningProperties": {

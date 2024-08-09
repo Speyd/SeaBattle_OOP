@@ -37,9 +37,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuLib", "MenuLib\MenuLib.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectorBuildersField", "DirectorBuildersField\DirectorBuildersField.csproj", "{9D59C8D7-636E-401A-9732-C60C2F6911C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu", "MainMenu\MainMenu.csproj", "{8D6F0992-0398-46D9-B584-B5288292B320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainMenu", "MainMenu\MainMenu.csproj", "{8D6F0992-0398-46D9-B584-B5288292B320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLib", "EntityLib\EntityLib.csproj", "{BCD93389-CD45-43CC-81D9-02EA0F98C6A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLib", "EntityLib\EntityLib.csproj", "{BCD93389-CD45-43CC-81D9-02EA0F98C6A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStarter", "GameStarter\GameStarter.csproj", "{CED2CE95-50D0-49FD-A867-3BF9EACA23B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAttacker", "GameAttacker\GameAttacker.csproj", "{A3CBBE3C-6992-4E83-B391-96AD16F487C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapLib", "SwapLib\SwapLib.csproj", "{EE03319E-08EB-4183-9478-B27B504710AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +129,18 @@ Global
 		{BCD93389-CD45-43CC-81D9-02EA0F98C6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD93389-CD45-43CC-81D9-02EA0F98C6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD93389-CD45-43CC-81D9-02EA0F98C6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED2CE95-50D0-49FD-A867-3BF9EACA23B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED2CE95-50D0-49FD-A867-3BF9EACA23B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED2CE95-50D0-49FD-A867-3BF9EACA23B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED2CE95-50D0-49FD-A867-3BF9EACA23B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CBBE3C-6992-4E83-B391-96AD16F487C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CBBE3C-6992-4E83-B391-96AD16F487C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CBBE3C-6992-4E83-B391-96AD16F487C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CBBE3C-6992-4E83-B391-96AD16F487C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE03319E-08EB-4183-9478-B27B504710AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE03319E-08EB-4183-9478-B27B504710AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE03319E-08EB-4183-9478-B27B504710AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE03319E-08EB-4183-9478-B27B504710AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

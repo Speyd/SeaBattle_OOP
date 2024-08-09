@@ -58,7 +58,7 @@ namespace BotLib
 
             lastAttack.Insert(0, initialCoordinates);
         }
-        public void attack(MainField mainField)
+        public override bool attack(MainField mainField)
         {
             Coordinates attackCoordinates = new Coordinates(-1, -1);
 
@@ -67,15 +67,31 @@ namespace BotLib
             else
                 attacker.findCoordinatesShip(mainField, ref attackCoordinates, ref lastAttack);
 
-
             if (attacker.attack(mainField, attackCoordinates) == CheckingResult.SUCCESS)
+            {
                 eventSuccessAttack(mainField, ref attackCoordinates);
+                return true;
+            }
             else if (lastAttack.Count >= 2)
                 eventMissAttack(mainField);
+
+
+            return false;
         }
         #endregion
 
         public override ref MainField getMainField() => ref field;
+        public override int getAmountDefeatBoat()
+        {
+            int amountDefeatBoat = 0;
+            foreach (Boat boat in field.boats)
+            {
+                if (boat.Condition == ShipCondition.DESTROYED)
+                    amountDefeatBoat++;
+            }
+
+            return amountDefeatBoat;
+        }
         public override void printField()
         {
             field.printField();

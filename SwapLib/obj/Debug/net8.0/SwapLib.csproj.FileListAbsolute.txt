@@ -1,0 +1,12 @@
+D:\C++ проекты\SeaBattle_C#\SwapLib\bin\Debug\net8.0\SwapLib.deps.json
+D:\C++ проекты\SeaBattle_C#\SwapLib\bin\Debug\net8.0\SwapLib.dll
+D:\C++ проекты\SeaBattle_C#\SwapLib\bin\Debug\net8.0\SwapLib.pdb
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.AssemblyInfoInputs.cache
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.AssemblyInfo.cs
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.csproj.CoreCompileInputs.cache
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.sourcelink.json
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.dll
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\refint\SwapLib.dll
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\SwapLib.pdb
+D:\C++ проекты\SeaBattle_C#\SwapLib\obj\Debug\net8.0\ref\SwapLib.dll

@@ -48,13 +48,51 @@ namespace PlayerLib
         }
         #endregion
 
-        public void attack(MainField targetField, Coordinates coordinates)
+
+        #region Attack
+        public bool attack(MainField mainField, Coordinates coordinates)
         {
-            if (attacker.attack(targetField, coordinates) == CheckingResult.SUCCESS)
+            if (attacker.attack(mainField, coordinates) == CheckingResult.SUCCESS)
+            {
                 Score++;
+                return true;
+            }
+
+            return false;
+        }   
+        public override bool attack(MainField mainField)
+        {
+            Coordinates coordinates = new Coordinates(-1, -1);
+
+            while (attacker.checkingConditions(mainField, coordinates.Line, coordinates.Column) == CheckingResult.NO_SUCCESS ||
+                attacker.checkingConditions(mainField, coordinates.Line, coordinates.Column) == CheckingResult.ERROR)
+            {
+                Console.Clear();
+                mainField.printField();
+
+                Console.Write("Enter coordinates by line: ");
+                coordinates.Line = int.Parse(Console.ReadLine() ?? "0");
+                Console.Write("Enter coordinates by column: ");
+                coordinates.Column = int.Parse(Console.ReadLine() ?? "0");
+            }
+
+            return attack(mainField, coordinates);
         }
+        #endregion
 
         public override ref MainField getMainField() => ref field;
+
+        public override int getAmountDefeatBoat()
+        {
+            int amountDefeatBoat = 0;
+            foreach(Boat boat in field.boats)
+            {
+                if(boat.Condition == ShipCondition.DESTROYED)
+                    amountDefeatBoat++;
+            }
+
+            return amountDefeatBoat;
+        }
 
         public override void printField()
         {

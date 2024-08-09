@@ -34,3 +34,5 @@ D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\BoatLib.dll
 D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\BoatLib.pdb
 D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\EntityLib.dll
 D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\EntityLib.pdb
+D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\MenuLib.dll
+D:\C++ проекты\SeaBattle_C#\BotLib\bin\Debug\net8.0\MenuLib.pdb

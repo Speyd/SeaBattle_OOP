@@ -11,6 +11,7 @@ using BuildersField;
 using System.Numerics;
 using DirectorBuildersBoat;
 using MainMenu;
+using GameStarter;
 try
 {
 
@@ -90,8 +91,12 @@ try
     //bot.printField();
     //player.attack(bot.getMainField(), new Coordinates(1, 2));
     //bot.printField();
-    Main_Menu mainMenu = new Main_Menu();
-    mainMenu.start();
+    //Main_Menu mainMenu = new Main_Menu();
+    //mainMenu.start();
+
+    Starter starter = new Starter();
+    starter.startGame();
+
 }
 catch (Exception e)
 {

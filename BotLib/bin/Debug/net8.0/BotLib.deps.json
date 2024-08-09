@@ -77,7 +77,8 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "Field": "1.0.0"
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
         },
         "runtime": {
           "BuildersField.dll": {}
@@ -111,6 +112,11 @@
         },
         "runtime": {
           "Field.dll": {}
+        }
+      },
+      "MenuLib/1.0.0": {
+        "runtime": {
+          "MenuLib.dll": {}
         }
       },
       "Randomer/1.0.0": {
@@ -177,6 +183,11 @@
       "sha512": ""
     },
     "Field/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MenuLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

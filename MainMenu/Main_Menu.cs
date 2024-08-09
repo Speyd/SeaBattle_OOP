@@ -13,10 +13,6 @@ namespace MainMenu
     public class Main_Menu
     {
         private static Creator creator = new Creator();
-
-        public Entity? firstEntity = null;
-        public Entity? secondEntity = null;
-
         private List<Type> getTypeEntityList()
         {
             Menu<List<Type>> menu = new Menu<List<Type>>
@@ -44,33 +40,35 @@ namespace MainMenu
 
             return menu[menu.setChoicePlayer()];
         }
-        private Entity creationEntity(IBuilderField builder, List<Type> types, int index)
+        private Entity? creationEntity(IBuilderField builder, List<Type> types, int index)
         {
-            Entity? tempEntity = null;
-
             if (index < 0 || index >= types.Count)
                 throw new Exception("Index out of range(List<Type> types - creationEntity())");
 
 
             if (types[index] == typeof(Player))
             {
-                tempEntity = new Player(0, 0, false);
+                Player player = new Player(0, 0, false);
 
-                Console.WriteLine($"Now you will edit the player field under number{index + 1}");
+                Console.Clear();
+                Console.WriteLine($"Now you will edit the player field under number {index + 1}");
                 Thread.Sleep(3000);
-                creator.creat(ref tempEntity.getMainField(), builder, false);
+                creator.creat(ref player.getMainField(), builder, false);
+
+                return player;
             }
             else if (types[index] == typeof(Bot))
             {
-                tempEntity = new Bot(0, 0);
-                creator.creat(ref tempEntity.getMainField(), builder);
+                Bot bot = new Bot(0, 0);
+                creator.creat(ref bot.getMainField(), builder);
+
+                return bot;
             }
 
-
-            return tempEntity is null ? throw new Exception("tempEntity is null") : tempEntity;
+            return null;
         }
 
-        public void start()
+        public void start(ref Entity? firstEntity, ref Entity? secondEntity)
         {            
             List<Type> types = getTypeEntityList();
 

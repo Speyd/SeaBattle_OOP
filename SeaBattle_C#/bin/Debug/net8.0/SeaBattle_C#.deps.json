@@ -17,6 +17,7 @@
           "DirectorBuildersBoat": "1.0.0",
           "Field": "1.0.0",
           "FieldCreator": "1.0.0",
+          "GameStarter": "1.0.0",
           "MainMenu": "1.0.0",
           "PlayerLib": "1.0.0"
         },
@@ -95,7 +96,8 @@
         "dependencies": {
           "AdderBoat": "1.0.0",
           "BoatLib": "1.0.0",
-          "Field": "1.0.0"
+          "Field": "1.0.0",
+          "MenuLib": "1.0.0"
         },
         "runtime": {
           "BuildersField.dll": {}
@@ -160,6 +162,24 @@
           "FieldCreator.dll": {}
         }
       },
+      "GameAttacker/1.0.0": {
+        "dependencies": {
+          "EntityLib": "1.0.0",
+          "SwapLib": "1.0.0"
+        },
+        "runtime": {
+          "GameAttacker.dll": {}
+        }
+      },
+      "GameStarter/1.0.0": {
+        "dependencies": {
+          "GameAttacker": "1.0.0",
+          "MainMenu": "1.0.0"
+        },
+        "runtime": {
+          "GameStarter.dll": {}
+        }
+      },
       "MainMenu/1.0.0": {
         "dependencies": {
           "BotLib": "1.0.0",
@@ -196,6 +216,11 @@
         },
         "runtime": {
           "Randomer.dll": {}
+        }
+      },
+      "SwapLib/1.0.0": {
+        "runtime": {
+          "SwapLib.dll": {}
         }
       }
     }
@@ -276,6 +301,16 @@
       "serviceable": false,
       "sha512": ""
     },
+    "GameAttacker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GameStarter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "MainMenu/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -292,6 +327,11 @@
       "sha512": ""
     },
     "Randomer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SwapLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
