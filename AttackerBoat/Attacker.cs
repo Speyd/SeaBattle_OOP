@@ -40,7 +40,7 @@ namespace AttackerBoat
             mainField.checkShipIntegrity(coordinates);
             mainField.updateFieldWithBoats();
 
-            Console.WriteLine($"An attack was made on a cell({coordinates.ToString()})");
+            Console.WriteLine($"Attack Success!\nAn attack was made on a cell({coordinates.ToString()})");
         }
        
         private void eventNoSuccessResult(MainField mainField, Coordinates coordinates)
@@ -50,7 +50,7 @@ namespace AttackerBoat
         private void eventMiisResult(MainField mainField, Coordinates coordinates)
         {
             mainField.field[coordinates.Line][coordinates.Column] = mainField.fieldInfo.MissCell;
-            Console.WriteLine("Missed!");
+            Console.WriteLine($"Missed!\nAn attack was made on a cell({coordinates.ToString()})");
         }
         #endregion
         private void verificationActions(CheckingResult result, MainField mainField, Coordinates coordinates)
@@ -63,6 +63,8 @@ namespace AttackerBoat
                     eventSuccessResult(mainField, coordinates); break;
                 case CheckingResult.MISS:
                     eventMiisResult(mainField, coordinates); break;
+                case CheckingResult.ERROR:
+                    Console.WriteLine("FFFFFFFFF"); break;
             }
         }
         public CheckingResult attack(MainField mainField, Coordinates coordinates)

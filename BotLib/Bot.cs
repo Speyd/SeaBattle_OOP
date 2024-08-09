@@ -21,14 +21,20 @@ namespace BotLib
 
         #region Constructor
 
-        public Bot(IBuilderField builderField) 
-            :base(builderField, true)
+        public Bot(IBuilderField builderField, string name) 
+            :base(builderField, name, true)
         { }
-        public Bot(MainField field) 
-            :base(field, true)
+        public Bot(MainField field, string name) 
+            :base(field, name, true)
         { }
-        public Bot(int line, int column, char emptyCell = '.', char missCell = '0', char shipDefeat = 'X') 
-            :base(line, column, true, emptyCell, missCell, shipDefeat)
+        public Bot(
+            int line, int column,
+            string name,
+            char emptyCell = '.',
+            char missCell = '0',
+            char shipDefeat = 'X'
+            ) 
+            :base(line, column, name, true, emptyCell, missCell, shipDefeat)
         { }
         #endregion
 
@@ -45,6 +51,10 @@ namespace BotLib
                 else
                     lastAttack.Add(attackCoordinates);
             }
+
+            mainField.printField();
+            Console.WriteLine("Press enter to continue!: ");
+            Console.ReadLine();
         }
         private void eventMissAttack(MainField mainField)
         {
@@ -63,10 +73,12 @@ namespace BotLib
             Coordinates attackCoordinates = new Coordinates(-1, -1);
 
             if (lastAttack.Count >= 2)
-                attacker.findCoordinatesMultiShips(ref attackCoordinates, ref lastAttack);
+                attacker.findCoordinatesMultiShips(mainField, ref attackCoordinates, ref lastAttack);
             else
                 attacker.findCoordinatesShip(mainField, ref attackCoordinates, ref lastAttack);
 
+
+            Console.Clear();
             if (attacker.attack(mainField, attackCoordinates) == CheckingResult.SUCCESS)
             {
                 eventSuccessAttack(mainField, ref attackCoordinates);
@@ -74,6 +86,12 @@ namespace BotLib
             }
             else if (lastAttack.Count >= 2)
                 eventMissAttack(mainField);
+
+
+            mainField.printField();
+            Console.WriteLine("Press enter to continue!: ");
+            Console.ReadLine();
+
 
 
             return false;

@@ -48,18 +48,20 @@ namespace MainMenu
 
             if (types[index] == typeof(Player))
             {
-                Player player = new Player(0, 0, false);
+                Player player = new Player(0, 0, $"Player #{index + 1}", false);
 
                 Console.Clear();
                 Console.WriteLine($"Now you will edit the player field under number {index + 1}");
                 Thread.Sleep(3000);
+
                 creator.creat(ref player.getMainField(), builder, false);
 
                 return player;
             }
+
             else if (types[index] == typeof(Bot))
             {
-                Bot bot = new Bot(0, 0);
+                Bot bot = new Bot(0, 0, $"Bot #{index + 1}");
                 creator.creat(ref bot.getMainField(), builder);
 
                 return bot;

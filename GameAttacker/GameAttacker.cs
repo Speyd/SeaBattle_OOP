@@ -41,7 +41,12 @@ namespace GameAttacker
                 if (attacker is null || defender is null)
                     throw new Exception("attacker or defender is null");
 
-                if(attacker.attack(defender.getMainField()) == false)
+                Console.Clear();
+                Console.WriteLine($"Now attacking {attacker.Name}");
+                Console.WriteLine("Press enter to continue!: ");
+                Console.ReadLine();
+
+                if (attacker.attack(defender.getMainField()) == false)
                     Swap<Entity?>.swap(ref attacker, ref defender);
             }
         }

@@ -16,20 +16,21 @@ namespace PlayerLib
 
         #region Constructor
 
-        public Player(IBuilderField builder, bool addBoat = false) 
-            : base(builder, addBoat)
+        public Player(IBuilderField builder, string name, bool addBoat = false) 
+            : base(builder, name, addBoat)
         { }
-        public Player(MainField field, bool addBoat = false) 
-            :base(field, addBoat)
+        public Player(MainField field, string name, bool addBoat = false) 
+            :base(field, name,  addBoat)
         { }
 
         public Player(
             int line, int column,
+            string name,
             bool addBoat = false,
             char emptyCell = '.', 
             char missCell = '0',
             char shipDefeat = 'X')
-            :base(line, column, addBoat, emptyCell, missCell, shipDefeat)
+            :base(line, column, name, addBoat, emptyCell, missCell, shipDefeat)
         {}
         #endregion
 
@@ -60,10 +61,9 @@ namespace PlayerLib
 
             return false;
         }   
-        public override bool attack(MainField mainField)
-        {
-            Coordinates coordinates = new Coordinates(-1, -1);
 
+        private void destinationCoordinate(MainField mainField, ref Coordinates coordinates)
+        {
             while (attacker.checkingConditions(mainField, coordinates.Line, coordinates.Column) == CheckingResult.NO_SUCCESS ||
                 attacker.checkingConditions(mainField, coordinates.Line, coordinates.Column) == CheckingResult.ERROR)
             {
@@ -76,7 +76,20 @@ namespace PlayerLib
                 coordinates.Column = int.Parse(Console.ReadLine() ?? "0");
             }
 
-            return attack(mainField, coordinates);
+            Console.Clear();
+        }
+        public override bool attack(MainField mainField)
+        {
+            Coordinates coordinates = new Coordinates(-1, -1);
+
+            destinationCoordinate(mainField, ref coordinates);
+            bool result = attack(mainField, coordinates);
+
+            mainField.printField();
+            Console.WriteLine("Press enter to continue!: ");
+            Console.ReadLine();
+
+            return result;
         }
         #endregion
 
