@@ -39,6 +39,13 @@ namespace BotLib
         #endregion
 
         #region Attack
+        private void outField(MainField mainField)
+        {
+            mainField.printHiddenField();
+            Console.WriteLine("Press enter to continue!: ");
+            Console.ReadLine();
+        }
+
         private void eventSuccessAttack(MainField mainField, ref Coordinates attackCoordinates)
         {
             Score++;
@@ -52,9 +59,7 @@ namespace BotLib
                     lastAttack.Add(attackCoordinates);
             }
 
-            mainField.printField();
-            Console.WriteLine("Press enter to continue!: ");
-            Console.ReadLine();
+            outField(mainField);
         }
         private void eventMissAttack(MainField mainField)
         {
@@ -88,12 +93,7 @@ namespace BotLib
                 eventMissAttack(mainField);
 
 
-            mainField.printField();
-            Console.WriteLine("Press enter to continue!: ");
-            Console.ReadLine();
-
-
-
+            outField(mainField);
             return false;
         }
         #endregion
@@ -113,6 +113,11 @@ namespace BotLib
         public override void printField()
         {
             field.printField();
+        }
+
+        public override void printHiddenField()
+        {
+            field.printHiddenField();
         }
 
     }

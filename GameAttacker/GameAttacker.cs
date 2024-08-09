@@ -31,6 +31,16 @@ namespace GameAttacker
             else
                 return false;
         }
+        private void outAdditionalInformation()
+        {
+            Console.Clear();
+            Console.WriteLine($"Now attacking {attacker?.Name}");
+            Console.WriteLine($"Defends himself(you will see his field): {defender?.Name}");
+
+            Console.WriteLine("Press enter to continue!: ");
+            Console.ReadLine();
+        }
+
         public void startAttack()
         {
             distributionOfRoles();
@@ -41,10 +51,7 @@ namespace GameAttacker
                 if (attacker is null || defender is null)
                     throw new Exception("attacker or defender is null");
 
-                Console.Clear();
-                Console.WriteLine($"Now attacking {attacker.Name}");
-                Console.WriteLine("Press enter to continue!: ");
-                Console.ReadLine();
+                outAdditionalInformation();
 
                 if (attacker.attack(defender.getMainField()) == false)
                     Swap<Entity?>.swap(ref attacker, ref defender);

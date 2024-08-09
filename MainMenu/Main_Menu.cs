@@ -54,7 +54,7 @@ namespace MainMenu
                 Console.WriteLine($"Now you will edit the player field under number {index + 1}");
                 Thread.Sleep(3000);
 
-                creator.creat(ref player.getMainField(), builder, false);
+                creator.creat(ref player.getMainField(), builder, false, true);
 
                 return player;
             }

@@ -163,9 +163,17 @@ namespace FieldCreator
             if (addAutomatBoats == false)
                 addBoats(ref mainField);
         }
-        public void creat(ref MainField mainField, IBuilderField builder, bool addAutomatBoats = true)
+        public void creat(ref MainField mainField, IBuilderField builder, bool addAutomatBoats = true, bool outField = false)
         {
             creatField(ref mainField, builder, addAutomatBoats);
+
+            if (outField == false)
+                return;
+
+            Console.Clear();
+            mainField.printField();
+            Console.WriteLine("It's your created field!\nPress enter to continue!: ");
+            Console.ReadLine();
         }
 
     }

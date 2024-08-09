@@ -99,5 +99,29 @@ namespace Field
                 Console.WriteLine();
             }
         }
+
+        public void printHiddenField()
+        {
+            Console.Write(" ");
+            for (int i = 0; i < fieldInfo.Column; ++i)
+                Console.Write(i);
+
+            Console.WriteLine();
+
+            for (int i = 0; i < fieldInfo.Line; i++)
+            {
+                Console.Write(i);
+                for (int j = 0; j < fieldInfo.Column; j++)
+                {
+                    if(field[i][j] == fieldInfo.ShipDefeat ||
+                       field[i][j] == fieldInfo.MissCell ||
+                       field[i][j] == fieldInfo.EmptyCell)
+                        Console.Write(field[i][j]);
+                    else
+                        Console.Write(fieldInfo.EmptyCell);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }

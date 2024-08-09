@@ -62,5 +62,6 @@ namespace EntityLib
         public abstract int getAmountDefeatBoat();
         public abstract ref MainField getMainField();
         public abstract void printField();
+        public abstract void printHiddenField();
     }
 }

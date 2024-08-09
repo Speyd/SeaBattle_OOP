@@ -13,7 +13,7 @@ namespace BuildersField
         private MainField? field = null;
 
         public static readonly int Height = 10;
-        public static readonly int Width = 12;
+        public static readonly int Width = 11;
 
         public void reset(
             bool addBoat = true,

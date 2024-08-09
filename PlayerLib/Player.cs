@@ -68,7 +68,7 @@ namespace PlayerLib
                 attacker.checkingConditions(mainField, coordinates.Line, coordinates.Column) == CheckingResult.ERROR)
             {
                 Console.Clear();
-                mainField.printField();
+                mainField.printHiddenField();
 
                 Console.Write("Enter coordinates by line: ");
                 coordinates.Line = int.Parse(Console.ReadLine() ?? "0");
@@ -85,7 +85,7 @@ namespace PlayerLib
             destinationCoordinate(mainField, ref coordinates);
             bool result = attack(mainField, coordinates);
 
-            mainField.printField();
+            mainField.printHiddenField();
             Console.WriteLine("Press enter to continue!: ");
             Console.ReadLine();
 
@@ -110,6 +110,11 @@ namespace PlayerLib
         public override void printField()
         {
             field.printField();
+        }
+
+        public override void printHiddenField()
+        {
+            field.printHiddenField();
         }
     }
 }
